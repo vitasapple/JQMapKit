@@ -13,6 +13,11 @@
 		1241739D210EF7A700F6593D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1241739C210EF7A700F6593D /* Assets.xcassets */; };
 		124173A0210EF7A700F6593D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1241739E210EF7A700F6593D /* LaunchScreen.storyboard */; };
 		124173A3210EF7A700F6593D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 124173A2210EF7A700F6593D /* main.m */; };
+		124173AB210EF7B000F6593D /* GetLocFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 124173AA210EF7B000F6593D /* GetLocFile.m */; };
+		124173C02110016200F6593D /* LocFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 124173BF2110016200F6593D /* LocFileVC.m */; };
+		124173C32110024200F6593D /* MapFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 124173C22110024200F6593D /* MapFileVC.m */; };
+		124173C6211002FA00F6593D /* GetMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 124173C5211002FA00F6593D /* GetMapView.m */; };
+		124173CC2110452F00F6593D /* JQAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 124173CB2110452F00F6593D /* JQAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		1241739F210EF7A700F6593D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		124173A1210EF7A700F6593D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		124173A2210EF7A700F6593D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		124173A9210EF7B000F6593D /* GetLocFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocFile.h; sourceTree = "<group>"; };
+		124173AA210EF7B000F6593D /* GetLocFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocFile.m; sourceTree = "<group>"; };
+		124173BE2110016200F6593D /* LocFileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocFileVC.h; sourceTree = "<group>"; };
+		124173BF2110016200F6593D /* LocFileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocFileVC.m; sourceTree = "<group>"; };
+		124173C12110024200F6593D /* MapFileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapFileVC.h; sourceTree = "<group>"; };
+		124173C22110024200F6593D /* MapFileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapFileVC.m; sourceTree = "<group>"; };
+		124173C4211002FA00F6593D /* GetMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetMapView.h; sourceTree = "<group>"; };
+		124173C5211002FA00F6593D /* GetMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMapView.m; sourceTree = "<group>"; };
+		124173CA2110452F00F6593D /* JQAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQAnnotation.h; sourceTree = "<group>"; };
+		124173CB2110452F00F6593D /* JQAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +75,13 @@
 			children = (
 				12417393210EF79C00F6593D /* AppDelegate.h */,
 				12417394210EF79C00F6593D /* AppDelegate.m */,
+				124173AD210F15D500F6593D /* JQMapKit */,
 				12417396210EF79C00F6593D /* ViewController.h */,
 				12417397210EF79C00F6593D /* ViewController.m */,
+				124173BE2110016200F6593D /* LocFileVC.h */,
+				124173BF2110016200F6593D /* LocFileVC.m */,
+				124173C12110024200F6593D /* MapFileVC.h */,
+				124173C22110024200F6593D /* MapFileVC.m */,
 				12417399210EF79C00F6593D /* Main.storyboard */,
 				1241739C210EF7A700F6593D /* Assets.xcassets */,
 				1241739E210EF7A700F6593D /* LaunchScreen.storyboard */,
@@ -69,6 +89,35 @@
 				124173A2210EF7A700F6593D /* main.m */,
 			);
 			path = sfsf;
+			sourceTree = "<group>";
+		};
+		124173AD210F15D500F6593D /* JQMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				124173AF210F160C00F6593D /* MapKit */,
+				124173AE210F15F300F6593D /* LocationKit */,
+			);
+			path = JQMapKit;
+			sourceTree = "<group>";
+		};
+		124173AE210F15F300F6593D /* LocationKit */ = {
+			isa = PBXGroup;
+			children = (
+				124173A9210EF7B000F6593D /* GetLocFile.h */,
+				124173AA210EF7B000F6593D /* GetLocFile.m */,
+			);
+			path = LocationKit;
+			sourceTree = "<group>";
+		};
+		124173AF210F160C00F6593D /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				124173C4211002FA00F6593D /* GetMapView.h */,
+				124173C5211002FA00F6593D /* GetMapView.m */,
+				124173CA2110452F00F6593D /* JQAnnotation.h */,
+				124173CB2110452F00F6593D /* JQAnnotation.m */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +151,11 @@
 				TargetAttributes = {
 					1241738F210EF79C00F6593D = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -142,8 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12417398210EF79C00F6593D /* ViewController.m in Sources */,
+				124173AB210EF7B000F6593D /* GetLocFile.m in Sources */,
+				124173C02110016200F6593D /* LocFileVC.m in Sources */,
 				124173A3210EF7A700F6593D /* main.m in Sources */,
+				124173C6211002FA00F6593D /* GetMapView.m in Sources */,
 				12417395210EF79C00F6593D /* AppDelegate.m in Sources */,
+				124173C32110024200F6593D /* MapFileVC.m in Sources */,
+				124173CC2110452F00F6593D /* JQAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3AGX8A6V6;
 				INFOPLIST_FILE = sfsf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3AGX8A6V6;
 				INFOPLIST_FILE = sfsf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
