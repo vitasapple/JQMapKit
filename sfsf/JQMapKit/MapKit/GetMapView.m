@@ -13,25 +13,40 @@
     GetLocFile * _file;
     UITapGestureRecognizer * _tmpTap;
     UIColor * _directiNavColor/*导航路线颜色*/;
+    NSInteger _pinArrCount;
 }
-
+@property(nonatomic,retain)UIImage * userLocImg;
 @property (nonatomic,strong) CLLocationManager * locationManager;
 @end
 @implementation GetMapView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        _file = [GetLocFile new];
-        self.locationManager = [_file ShareLocationManager];
-        self.delegate = self;
-        if ([CLLocationManager authorizationStatus]==kCLAuthorizationStatusNotDetermined){
-            [self.locationManager requestWhenInUseAuthorization];
-        }
+        [self createSelf];
     }
     return self;
 }
+- (instancetype)initWithFrame:(CGRect)frame withUserLocImage:(UIImage*)img{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self createSelf];
+        self.userLocImg = img;
+        self.delegate = self;
+    }
+    return self;
+}
+-(void)createSelf{
+    _file = [GetLocFile new];
+    self.showsCompass = YES;
+    self.showsScale = YES;
+    self.showsTraffic = YES;
+    self.locationManager = [_file ShareLocationManager];
+    if ([CLLocationManager authorizationStatus]==kCLAuthorizationStatusNotDetermined){
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+}
+
 - (CLGeocoder *)geocoder{
     if (!_geocoder) {
         _geocoder = [[CLGeocoder alloc] init];
@@ -130,9 +145,19 @@
 }
 -(void)setPinArray:(NSMutableArray<JQAnnotation *> *)pinArray{
     _pinArray = pinArray;
+    _pinArrCount = pinArray.count;
+    if(self.delegate==nil){
+        self.delegate = self;
+    }
 }
 -(void)setIsOpenUnlimitPut:(BOOL)isOpenUnlimitPut{
     _isOpenUnlimitPut = isOpenUnlimitPut;
+}
+-(void)setMainTitle:(NSString *)mainTitle{
+    _mainTitle = mainTitle;
+}
+-(void)setSubMainTitle:(NSString *)subMainTitle{
+    _subMainTitle = subMainTitle;
 }
 #pragma  mark -MKMapViewDelegate
 /*
@@ -141,8 +166,8 @@
  */
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
 //1.给userLocation设置数据
-    userLocation.title = @"我是主标题";
-    userLocation.subtitle = @"我是子标题";
+    userLocation.title = _mainTitle;
+    userLocation.subtitle = _subMainTitle;
 //2. 设置显示地图的中心点(将当前用户的位置设置为地图的中心点)
     [mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
 //3. 设置地图的展示范围，我们如何拿到这个范围呢: 1. 实现下面的代理方法. 2. 拖动地图放大,一直放到认为合适的位置 3    . 在下面代理方法中,拿到相应的span
@@ -175,17 +200,22 @@
  那么这个方法就是根据overlay模型来返回遮盖
  MKPolyline系统自带的overlay模型
  */
-- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
-{
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
     MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
     renderer.strokeColor = _directiNavColor==nil?[UIColor redColor]:_directiNavColor;
     return renderer;
 }
 #pragma mark MKMapViewDelegate
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
-    if (self.isOpenUnlimitPut) return nil;
+    if (!self.userLocImg&&_pinArrCount==0) {
+        return nil;
+    }
+    if ([annotation isKindOfClass:[JQAnnotation class]]) {
+        if (_pinArrCount==0) {
+            return nil;
+        }
+    }
     //用户位置这个大头针不是JQAnnotation 而是(MKUserLocation *)userLocation
-    if (![annotation isKindOfClass:[JQAnnotation class]]) return nil;
     static NSString *ID = @"tuangou";
     // 从缓存池中取出可以循环利用的大头针view
     MKAnnotationView *annoView = [mapView dequeueReusableAnnotationViewWithIdentifier:ID];
@@ -194,13 +224,22 @@
         annoView.canShowCallout = YES;//点击大头针,显示标题和子标题
         annoView.calloutOffset = CGPointMake(0, -10);//设置大头针的偏移量
     }
-    // 传递模型
     annoView.annotation = annotation;
-    //设置图片
-    JQAnnotation *anno = annotation;
-    annoView.image = [UIImage imageNamed:anno.icon];
-    return annoView;
+    if ([annotation isKindOfClass:[JQAnnotation class]]){
+        //设置图片
+        JQAnnotation *anno = annotation;
+        annoView.image = [UIImage imageNamed:anno.icon];
+        return annoView;
+    }else{
+        if (self.userLocImg!=nil) {
+            annoView.image = self.userLocImg;
+            return annoView;
+        }else{
+            return nil;
+        }
+    }    
 }
+
 -(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     if ([view isKindOfClass:[JQAnnotation class]]) { //点击自定义的大头针视图
 
@@ -209,5 +248,10 @@
 //        JQAnnotation * anno = view.annotation;
         
     }
+}
+-(void)dealloc{
+    self.delegate = nil;
+    [self removeFromSuperview];
+    _locationManager = nil;
 }
 @end

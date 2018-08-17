@@ -10,6 +10,8 @@
 #import "JQAnnotation.h"
 typedef void (^GetPutPinLoc)(CLLocationCoordinate2D coor2D);
 @interface GetMapView : MKMapView
+/**若要改变用户定位的图片则调用这个方法*/
+- (instancetype)initWithFrame:(CGRect)frame withUserLocImage:(UIImage*)img;
 /**获取定位管理者*/
 -(CLLocationManager *)ShareLocationManager;
 /**获取当前地图对象*/
@@ -39,6 +41,11 @@ typedef void (^GetPutPinLoc)(CLLocationCoordinate2D coor2D);
 @property(nonatomic,copy)GetPutPinLoc getPutLocBlock;
 //是否开启无限制点击就放大头针的功能，默认系统大头针图片
 @property(nonatomic,assign)BOOL isOpenUnlimitPut;
+//当前用户的定位大头针的点击出现的主标题
+@property(nonatomic,copy)NSString * mainTitle;
+//当前用户的定位大头针的点击出现的副标题
+@property(nonatomic,copy)NSString * subMainTitle;
+
 @property (nonatomic, strong) CLGeocoder *geocoder;
 /**设置放置的大头针的标题副标题
  如果点击的数超过数组个数，比如设置三个，但是点击了八次屏幕，则后五次都默认没有标题副标题
