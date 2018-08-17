@@ -117,5 +117,11 @@ v = [[GetMapView alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bo
 @property(nonatomic,copy)GetPutPinLoc getPutLocBlock;
 //是否开启无限制点击就放大头针的功能，默认系统大头针图片
 @property(nonatomic,assign)BOOL isOpenUnlimitPut;
+//当前用户的定位大头针的点击出现的主标题
+@property(nonatomic,copy)NSString * mainTitle;
+//当前用户的定位大头针的点击出现的副标题
+@property(nonatomic,copy)NSString * subMainTitle;
+/**若要改变用户定位的图片则调用这个方法*/
+- (instancetype)initWithFrame:(CGRect)frame withUserLocImage:(UIImage*)img;
 ```
 ### 地图的用法比较多，详细的看demo
