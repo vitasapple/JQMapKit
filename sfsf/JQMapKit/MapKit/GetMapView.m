@@ -14,6 +14,7 @@
     UITapGestureRecognizer * _tmpTap;
     UIColor * _directiNavColor/*导航路线颜色*/;
     NSInteger _pinArrCount;
+    NSMutableArray * _pinStoreArr/*存储用户点击放在地图上的大头针按照用户设置的个数存放*/;
 }
 @property(nonatomic,retain)UIImage * userLocImg;
 @property (nonatomic,strong) CLLocationManager * locationManager;
@@ -23,6 +24,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        _pinStoreArr = [NSMutableArray new];
         [self createSelf];
     }
     return self;
@@ -75,6 +77,12 @@
         [_pinArray removeObjectAtIndex:0];
     }
     [self addAnnotation:anno];
+    if (_pinStoreArr.count>=self.pinCount) {
+        JQAnnotation * ann = _pinStoreArr.lastObject;
+        [self removeAnnotation:ann];
+        [_pinStoreArr removeLastObject];
+    }
+    [_pinStoreArr addObject:anno];
 }
 -(void)removeTapGesture{
     if (self.isPutPin) {
@@ -107,7 +115,7 @@
     MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
     // 计算路线
     [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
-//        NSLog(@"总共=====%d条路线", response.routes.count);
+        //        NSLog(@"总共=====%d条路线", response.routes.count);
         // 遍历所有的路线
         for (MKRoute *route in response.routes) {
             // 添加路线遮盖(就回调用下面的代理方法)
@@ -165,19 +173,19 @@
  userLocation 表示地图上蓝色那颗大头针的数据
  */
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-//1.给userLocation设置数据
+    //1.给userLocation设置数据
     userLocation.title = _mainTitle;
     userLocation.subtitle = _subMainTitle;
-//2. 设置显示地图的中心点(将当前用户的位置设置为地图的中心点)
+    //2. 设置显示地图的中心点(将当前用户的位置设置为地图的中心点)
     [mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
-//3. 设置地图的展示范围，我们如何拿到这个范围呢: 1. 实现下面的代理方法. 2. 拖动地图放大,一直放到认为合适的位置 3    . 在下面代理方法中,拿到相应的span
+    //3. 设置地图的展示范围，我们如何拿到这个范围呢: 1. 实现下面的代理方法. 2. 拖动地图放大,一直放到认为合适的位置 3    . 在下面代理方法中,拿到相应的span
     MKCoordinateSpan span = MKCoordinateSpanMake(0.021321, 0.019366);
     MKCoordinateRegion region = MKCoordinateRegionMake(userLocation.location.coordinate, span);
     [mapView setRegion:region animated:YES];
 }
 /*用户缩放时,就会调用,该方法可用于调试出适合的跨度,然后用到setRegion方法中*/
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated{
-//    NSLog(@"%f %f", mapView.region.span.latitudeDelta, mapView.region.span.longitudeDelta);
+    //    NSLog(@"%f %f", mapView.region.span.latitudeDelta, mapView.region.span.longitudeDelta);
 }
 -(void)pointTransformPin:(CLLocationCoordinate2D)point title:(NSString*)title subTitle:(NSString*)subTitle icon:(NSString*)iconName animate:(BOOL)animate{
     if (self) {
@@ -237,15 +245,15 @@
         }else{
             return nil;
         }
-    }    
+    }
 }
 
 -(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     if ([view isKindOfClass:[JQAnnotation class]]) { //点击自定义的大头针视图
-
+        
     }else{ //点击系统自带的大头针视图
         //1.拿到系统自带大头针的模型
-//        JQAnnotation * anno = view.annotation;
+        //        JQAnnotation * anno = view.annotation;
         
     }
 }

@@ -45,6 +45,8 @@ typedef void (^GetPutPinLoc)(CLLocationCoordinate2D coor2D);
 @property(nonatomic,copy)NSString * mainTitle;
 //当前用户的定位大头针的点击出现的副标题
 @property(nonatomic,copy)NSString * subMainTitle;
+//用户设置的放置大头针的个数，若设置1，则点一个地方移除上次的大头针
+@property(nonatomic,assign)NSInteger pinCount;
 
 @property (nonatomic, strong) CLGeocoder *geocoder;
 /**设置放置的大头针的标题副标题
