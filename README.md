@@ -56,6 +56,15 @@ file = [GetLocFile new];
         }
 }];
 ```
+### 给定经纬度搜索周边
+```
+[file searchAroundWithLong:118.5855000000 andLat:24.8147900000 andBackBlock:^(MKLocalSearchResponse *response) {
+        for(MKMapItem *mapItem in response.mapItems){
+            NSLog(@"----------1>%@", mapItem.name);//获取周边信息
+            NSLog(@"==========1>%f,%f",mapItem.placemark.location.coordinate.latitude,mapItem.placemark.location.coordinate.longitude);//获取周边信息的经纬度
+        }
+    }];
+```
 #### 判断是否进入一个区域
 ```
 //block要在方法前调用
