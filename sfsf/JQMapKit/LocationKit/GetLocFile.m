@@ -55,13 +55,15 @@
             if (self.placeMarkBlock) {
                 self.placeMarkBlock(placemark);
             }
+        }else{
+            NSLog(@"GetLocFile.m lines:59 error : %@",error);
         }
     }];
     [self.locationManager stopUpdatingLocation];
 }
 -(void)searchAroundWithText:(NSString*)text andBackBlock:(SearchLocTextBlock)sblcok{
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc]init];
-    request.naturalLanguageQuery = text;
+    request.naturalLanguageQuery = text;    
     MKLocalSearch *localSearch = [[MKLocalSearch alloc]initWithRequest:request];
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error){
         if (!error) {
@@ -70,6 +72,39 @@
             NSLog(@"GetLocFile.m lines:68 error : %@",error);
         }
     }];
+}
+-(void)searchAroundWithLong:(CGFloat)lng andLat:(CGFloat)lat andBackBlock:(SearchLocTextBlock)sblcok{
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(lat, lng);
+    CGFloat r = self.radius<1?500:self.radius;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate,r, r);
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc]init];
+    request.region = region;
+    request.naturalLanguageQuery = @"周边";
+    MKLocalSearch *localSearch = [[MKLocalSearch alloc]initWithRequest:request];
+    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error){
+        if (!error) {
+            sblcok(response);
+        }else{
+            NSLog(@"GetLocFile.m lines:86 error : %@",error);
+        }
+    }];
+}
+-(void)getLocationInfoWithLong:(CGFloat)lng andLat:(CGFloat)lat andBackBlock:(PlaceMrakBlock)placeBlcok{
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    CLLocation *location=[[CLLocation alloc]initWithLatitude:lat longitude:lng];
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (placemarks.count > 0){
+            CLPlacemark *placemark = [placemarks objectAtIndex:0];
+            if (self.placeMarkBlock) {
+                self.placeMarkBlock(placemark);
+            }
+        }else{
+            NSLog(@"GetLocFile.m lines:100 ,info:placemarks count is 0");
+        }
+    }];
+}
+-(void)setRadius:(CGFloat)radius{
+    _radius = radius;
 }
 #pragma mark 区域监听方法和代理
 -(void)MonitorAreaWithCenter:(CLLocationCoordinate2D)center Radius:(double)radius{

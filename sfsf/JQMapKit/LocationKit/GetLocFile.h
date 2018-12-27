@@ -36,6 +36,10 @@ typedef void (^AreaMonitorBlock)(AreaMonitorType areaType);
  */
 -(void)VicGetLocationAuth;
 
+/**根据经纬度获取该经纬度对应的位置信息，定位信息默认在PlaceMrakBlock中返回
+ */
+-(void)getLocationInfoWithLong:(CGFloat)lng andLat:(CGFloat)lat andBackBlock:(PlaceMrakBlock)placeBlcok;
+
 /** 根据给定的字符串返回附近的地址
  MKLocalSearchResponse的主要属性:
  name               -> 附近地名
@@ -45,6 +49,16 @@ typedef void (^AreaMonitorBlock)(AreaMonitorType areaType);
  isCurrentLocation  -> 是否是当前位置
  */
 -(void)searchAroundWithText:(NSString*)text andBackBlock:(SearchLocTextBlock)sblcok;
+/** 根据给定的经纬度返回附近的地址
+ MKLocalSearchResponse的主要属性:
+ name               -> 附近地名
+ phoneNumber        -> 电话号码（没卵用）
+ url
+ timeZone           -> 时区
+ isCurrentLocation  -> 是否是当前位置
+ */
+-(void)searchAroundWithLong:(CGFloat)lng andLat:(CGFloat)lat andBackBlock:(SearchLocTextBlock)sblcok;
+
 /**区域监听中心：center
  区域监听半径：  Radius
  CLLocationCoordinate2DMake(x, y);
@@ -68,5 +82,9 @@ typedef void (^AreaMonitorBlock)(AreaMonitorType areaType);
 @property(nonatomic,copy)AreaMonitorBlock areaBlock;
 //未开启定位
 @property(nonatomic,copy)UnopenLocServiceBlock unOpenBlock;
+/**返回当前定位的位置信息*/
 @property(nonatomic,copy)PlaceMrakBlock placeMarkBlock;
+/**使用经纬度返回附近的地址的时候用到的搜索周边的范围，默认500米
+ */
+@property(nonatomic,assign)CGFloat radius;
 @end
