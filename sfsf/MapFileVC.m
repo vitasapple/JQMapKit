@@ -23,44 +23,47 @@
     self.title = @"地图";
     self.view.backgroundColor = [UIColor whiteColor];
 //    v = [[GetMapView alloc]initWithFrame:CGRectMake(0, 84, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-84)];
-    //若要改变用户定位的图片则调用这个方法
+    //若要改变用户定位的图片则调用这个方法，若要调用导航路线规划也调用这个方法
     v = [[GetMapView alloc]initWithFrame:CGRectMake(0, 84, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-84) withUserLocImage:[UIImage imageNamed:@"category_2"]];
-    v.isShowUser = YES;
-    v.JQMapType = 0;
-    v.isTrackUser = YES;//显示你现在的确切位置，会有一个缩放的动画
-    v.mainTitle = @"大太阳";
-    v.subMainTitle = @"大风起兮云飞扬";
-    v.isPutPin = YES;
-//    v.isOpenUnlimitPut = YES;
-    NSMutableArray * pinaRR = [NSMutableArray new];
-    for (int i = 0 ; i< 3 ; i++) {
-        JQAnnotation * an = [JQAnnotation new];
-        an.title = [NSString stringWithFormat:@"标题%d",i];
-        an.subtitle = [NSString stringWithFormat:@"副标题%d",i];
-        an.icon = @"category_5";
-//        an.detailIcon = @"me";
-        [pinaRR addObject:an];
-    }
-    v.pinArray = pinaRR;
+//    v.isShowUser = YES;
+//    v.JQMapType = 0;
+//    v.isTrackUser = YES;//显示你现在的确切位置，会有一个缩放的动画
+//    v.mainTitle = @"大太阳";
+//    v.subMainTitle = @"大风起兮云飞扬";
+//    v.isPutPin = YES;
+////    v.isOpenUnlimitPut = YES;
+//    NSMutableArray * pinaRR = [NSMutableArray new];
+//    for (int i = 0 ; i< 3 ; i++) {
+//        JQAnnotation * an = [JQAnnotation new];
+//        an.title = [NSString stringWithFormat:@"标题%d",i];
+//        an.subtitle = [NSString stringWithFormat:@"副标题%d",i];
+//        an.icon = @"category_5";
+////        an.detailIcon = @"me";
+//        [pinaRR addObject:an];
+//    }
+//    v.pinArray = pinaRR;
     
     
-    //导航功能，跟上放注释不要混，虽然我也不知道混了会怎么样，应该没什么关系
-//    NSString *address1 = @"北京";
-//    NSString *address2 = @"广州";
-//    //地理编码出2个位置
-//    [v.geocoder geocodeAddressString:address1 completionHandler:^(NSArray *placemarks, NSError *error) {
-//        if (error) return;
-//
-//        CLPlacemark *fromPm = [placemarks firstObject];
-//
-//        [self->v.geocoder geocodeAddressString:address2 completionHandler:^(NSArray *placemarks, NSError *error) {
-//            if (error) return;
-//
-//            CLPlacemark *toPm = [placemarks firstObject];
-//
-//            [self->v addLineFrom:fromPm to:toPm andColor:[UIColor blueColor]];
-//        }];
-//    }];
+    //路线规划，跟上放注释不要混，虽然我也不知道混了会怎么样，应该没什么关系
+    NSString *address1 = @"北京";
+    NSString *address2 = @"广州";
+    //路径设置为虚线 长度为2的线，长度为2的空白，长度为3的线，长度为4的空白 不断循环后组成的虚线
+    //注释后为默认的实线
+//    v.dashLineArr = @[@2,@2,@3,@4];
+    //地理编码出2个位置
+    [v.geocoder geocodeAddressString:address1 completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (error) return;
+
+        CLPlacemark *fromPm = [placemarks firstObject];
+
+        [self->v.geocoder geocodeAddressString:address2 completionHandler:^(NSArray *placemarks, NSError *error) {
+            if (error) return;
+
+            CLPlacemark *toPm = [placemarks firstObject];
+            //这里设置路线颜色
+            [self->v addLineFrom:fromPm to:toPm andColor:[UIColor blueColor]];
+        }];
+    }];
     [self.view addSubview:v];
     
     //移除点击放大头针的功能

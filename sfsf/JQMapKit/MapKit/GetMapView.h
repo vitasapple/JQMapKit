@@ -47,6 +47,8 @@ typedef void (^GetPutPinLoc)(CLLocationCoordinate2D coor2D);
 @property(nonatomic,copy)NSString * subMainTitle;
 //用户设置的放置大头针的个数，若设置1，则点一个地方移除上次的大头针
 @property(nonatomic,assign)NSInteger pinCount;
+//虚线数组,eg: 长度为2的线，长度为2的空白，长度为3的线，长度为4的空白 不断循环后组成的虚线
+@property(nonatomic,retain)NSArray * dashLineArr;
 
 @property (nonatomic, strong) CLGeocoder *geocoder;
 /**设置放置的大头针的标题副标题

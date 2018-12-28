@@ -167,6 +167,9 @@
 -(void)setSubMainTitle:(NSString *)subMainTitle{
     _subMainTitle = subMainTitle;
 }
+-(void)setDashLineArr:(NSArray *)dashLineArr{
+    _dashLineArr = dashLineArr;
+}
 #pragma  mark -MKMapViewDelegate
 /*
  当用户的位置更新，就会调用（不断地监控用户的位置，调用频率特别高）
@@ -211,6 +214,9 @@
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
     MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
     renderer.strokeColor = _directiNavColor==nil?[UIColor redColor]:_directiNavColor;
+    if (_dashLineArr) {
+        renderer.lineDashPattern = _dashLineArr;
+    }
     return renderer;
 }
 #pragma mark MKMapViewDelegate
