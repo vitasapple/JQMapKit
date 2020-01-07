@@ -31,14 +31,13 @@
     };
     [file VicGetLocationAuth];
     
-    [file searchAroundWithLong:118.5855000000 andLat:24.8147900000 andBackBlock:^(MKLocalSearchResponse *response) {
-        for(MKMapItem *mapItem in response.mapItems){
-            NSLog(@"----------1>%@", mapItem.name);//获取周边信息
-            NSLog(@"==========1>%f,%f",mapItem.placemark.location.coordinate.latitude,mapItem.placemark.location.coordinate.longitude);//获取周边信息的经纬度
+    [file getLocationInfoByLongtitude:118.5855000000 lat:24.8147900000 andBackBlock:^(NSArray *placeMarkArray) {
+        for(CLPlacemark *placeMark in placeMarkArray){
+            NSLog(@"placeMark.country=%@,\n placeMark.name=%@,\n placeMark.locality = %@,\n placeMark.subLocality=%@",placeMark.country,placeMark.name,placeMark.locality, placeMark.subLocality);
         }
     }];
-    
-    [file searchAroundWithText:@"太子酒店" andBackBlock:^(MKLocalSearchResponse *response) {
+    CLLocationCoordinate2D cll =  CLLocationCoordinate2DMake(24.8147900000, 118.5855000000);
+    [file searchAroundWithText:@"太子酒店" coordinate:cll range:100 andBackBlock:^(MKLocalSearchResponse *response) {
         for(MKMapItem *mapItem in response.mapItems){
             NSLog(@"----------2>%@", mapItem.name);//获取周边信息
             NSLog(@"==========2>%f,%f",mapItem.placemark.location.coordinate.latitude,mapItem.placemark.location.coordinate.longitude);//获取周边信息的经纬度

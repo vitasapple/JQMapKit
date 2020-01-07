@@ -15,8 +15,8 @@
 @implementation GetLocFile
 -(void)VicGetLocationAuth{
     if([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied){
-        if (self.unOpenBlock) {
-            self.unOpenBlock();
+        if (self.authBlock) {
+            self.authBlock(AuthLocationUnOpen);
         }
     }else{
         [self startLocation];
@@ -55,15 +55,36 @@
             if (self.placeMarkBlock) {
                 self.placeMarkBlock(placemark);
             }
-        }else{
-            NSLog(@"GetLocFile.m lines:59 error : %@",error);
         }
     }];
     [self.locationManager stopUpdatingLocation];
 }
--(void)searchAroundWithText:(NSString*)text andBackBlock:(SearchLocTextBlock)sblcok{
+-(void)getLocationInfoByLongtitude:(CGFloat)longitude lat:(CGFloat)latitude andBackBlock:(LocationInfoBlock)sblcok{
+    CLGeocoder *clGeoCoder = [[CLGeocoder alloc] init];
+    CLLocation* location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
+    [clGeoCoder reverseGeocodeLocation:location completionHandler: ^(NSArray *placemarks,NSError *error) {
+        if (!error) {
+            sblcok(placemarks);
+        }
+    }];
+}
+-(void)searchAroundWithText:(NSString*)text coordinate:(CLLocationCoordinate2D)coor2D range:(CGFloat)range andBackBlock:(SearchLocTextBlock)sblcok{
+    int flag = 0;
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc]init];
-    request.naturalLanguageQuery = text;    
+    
+    if (coor2D.latitude>0 && coor2D.longitude>0 && range>0) {
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coor2D,range, range);
+        request.region = region;
+        flag ++ ;
+    }
+    if (text.length>0) {
+        request.naturalLanguageQuery = text;
+        flag ++;
+    }
+    if (flag ==0) {
+        NSLog(@"---->>内容文本或者经纬度至少要传一个<<---");
+        return;
+    }
     MKLocalSearch *localSearch = [[MKLocalSearch alloc]initWithRequest:request];
     [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error){
         if (!error) {
@@ -72,39 +93,6 @@
             NSLog(@"GetLocFile.m lines:68 error : %@",error);
         }
     }];
-}
--(void)searchAroundWithLong:(CGFloat)lng andLat:(CGFloat)lat andBackBlock:(SearchLocTextBlock)sblcok{
-    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(lat, lng);
-    CGFloat r = self.radius<1?500:self.radius;
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate,r, r);
-    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc]init];
-    request.region = region;
-    request.naturalLanguageQuery = @"周边";
-    MKLocalSearch *localSearch = [[MKLocalSearch alloc]initWithRequest:request];
-    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error){
-        if (!error) {
-            sblcok(response);
-        }else{
-            NSLog(@"GetLocFile.m lines:86 error : %@",error);
-        }
-    }];
-}
--(void)getLocationInfoWithLong:(CGFloat)lng andLat:(CGFloat)lat andBackBlock:(PlaceMrakBlock)placeBlcok{
-    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    CLLocation *location=[[CLLocation alloc]initWithLatitude:lat longitude:lng];
-    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
-        if (placemarks.count > 0){
-            CLPlacemark *placemark = [placemarks objectAtIndex:0];
-            if (self.placeMarkBlock) {
-                self.placeMarkBlock(placemark);
-            }
-        }else{
-            NSLog(@"GetLocFile.m lines:100 ,info:placemarks count is 0");
-        }
-    }];
-}
--(void)setRadius:(CGFloat)radius{
-    _radius = radius;
 }
 #pragma mark 区域监听方法和代理
 -(void)MonitorAreaWithCenter:(CLLocationCoordinate2D)center Radius:(double)radius{
@@ -174,18 +162,33 @@
         case kCLAuthorizationStatusNotDetermined:{//NSLog(@"用户还未决定授权");
         }break;
         case kCLAuthorizationStatusRestricted:{//NSLog(@"访问受限");
+            if (self.authBlock) {
+                self.authBlock(AuthLocationLimit);
+            }
         }break;
         case kCLAuthorizationStatusDenied:{
             // 类方法，判断是否开启定位服务
             if ([CLLocationManager locationServicesEnabled]) {
                 //                NSLog(@"定位服务开启，被拒绝");
+                if (self.authBlock) {
+                    self.authBlock(AuthLocationRefuse);
+                }
             } else {
                 //                NSLog(@"定位服务关闭，不可用");
+                if (self.authBlock) {
+                    self.authBlock(AuthLocationUnOpen);
+                }
             }
         }break;
         case kCLAuthorizationStatusAuthorizedAlways:{//NSLog(@"获得前后台授权");
+            if (self.authBlock) {
+                self.authBlock(AuthLocationAccept);
+            }
         }break;
         case kCLAuthorizationStatusAuthorizedWhenInUse:{//NSLog(@"获得前台授权");
+            if (self.authBlock) {
+                self.authBlock(AuthLocationAccept);
+            }
         }break;
         default:
             break;
