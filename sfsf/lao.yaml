@@ -32,7 +32,7 @@ dns:
       - +.youtube.com
   nameserver-policy: ~
 proxies:
-  - {name: 老vpn, server: hk4.elknode.buzz, port: 8443, type: vmess, uuid: 9ce5464d-23fb-3665-8099-2069faf7b5a2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 老vpn, server: hk4.elknode.buzz, port: 8443, type: vmess, uuid: 9ce5464d-23fb-3665-8099-2069faf7b5a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 选择节点
     type: select
