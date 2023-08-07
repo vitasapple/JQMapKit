@@ -23,6 +23,9 @@ dns:
 proxies:
   - {"name":"日本自建","type":"ss","server":"ltsyyds.xn--9kq967o.top","port":20005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm"}
   - {"name":"🇭🇰Hong Kong Premium 01 - 习近平机场.com","type":"vmess","server":"hk4.elknode.buzz","port":8443,"cipher":"auto","uuid":"9ce5464d-23fb-3665-8099-2069faf7b5a2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}}}
+  - {"name":"HG-GZ @hwzy0","type":"trojan","server":"110.239.96.111","port":9001,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
+  - {"name":"HG-NJ @hwzy0","type":"trojan","server":"110.239.96.111","port":9002,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
+  - {"name":"HG-BJ @hwzy0","type":"trojan","server":"124.64.206.11","port":443,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
