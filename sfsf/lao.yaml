@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-08-07 10:15:30
+# 创建时间：2023-08-07 16:01:52
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：5
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,56 +21,74 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"日本自建","type":"ss","server":"ltsyyds.xn--9kq967o.top","port":20005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm"}
-  - {"name":"🇭🇰Hong Kong Premium 01 - 习近平机场.com","type":"vmess","server":"hk4.elknode.buzz","port":8443,"cipher":"auto","uuid":"9ce5464d-23fb-3665-8099-2069faf7b5a2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}}}
   - {"name":"HG-GZ @hwzy0","type":"trojan","server":"110.239.96.111","port":9001,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
   - {"name":"HG-NJ @hwzy0","type":"trojan","server":"110.239.96.111","port":9002,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
   - {"name":"HG-BJ @hwzy0","type":"trojan","server":"124.64.206.11","port":443,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
+  - {"name":"🇭🇰Hong Kong Premium 01 - 习近平机场.com","type":"vmess","server":"hk4.elknode.buzz","port":8443,"cipher":"auto","uuid":"9ce5464d-23fb-3665-8099-2069faf7b5a2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}}}
+  - {"name":"日本自建","type":"ss","server":"ltsyyds.xn--9kq967o.top","port":20005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -93,8 +111,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本自建
+      - HG-GZ @hwzy0
+      - HG-NJ @hwzy0
+      - HG-BJ @hwzy0
       - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
+      - 日本自建
 
 rules:
 # 本地/局域网地址
