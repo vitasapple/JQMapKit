@@ -22,7 +22,6 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"日本自建","type":"ss","server":"lts永遠的神.xn--9kq967o.top","port":20005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm"}
   - {"name":"美国_Telegram@kxswa_1","type":"ss","server":"140.99.53.242","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"美国_Telegram@kxswa_2","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl2.shabijichang.com"}}}
   - {"name":"美国_Telegram@kxswa_3","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm4.shabijichang.com"}}}
