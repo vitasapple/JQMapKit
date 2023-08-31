@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-08-07 16:01:52
+# 客户端：Clash.Meta
+# 创建时间：2023-08-31 11:29:25
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：92
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -21,74 +22,684 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"HG-GZ @hwzy0","type":"trojan","server":"110.239.96.111","port":9001,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
-  - {"name":"HG-NJ @hwzy0","type":"trojan","server":"110.239.96.111","port":9002,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
-  - {"name":"HG-BJ @hwzy0","type":"trojan","server":"124.64.206.11","port":443,"udp":true,"password":"9d1bb718-f429-40eb-9373-3e6d588ff78c","sni":"www.baidu.com","skip-cert-verify":true}
-  - {"name":"🇭🇰Hong Kong Premium 01 - 习近平机场.com","type":"vmess","server":"hk4.elknode.buzz","port":8443,"cipher":"auto","uuid":"9ce5464d-23fb-3665-8099-2069faf7b5a2","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"{\"Host\":\"baiducdncmn2.inter.iqiyi.com\"}"}}}
-  - {"name":"日本自建","type":"ss","server":"ltsyyds.xn--9kq967o.top","port":20005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm"}
+  - {"name":"日本自建","type":"ss","server":"lts永遠的神.xn--9kq967o.top","port":20005,"password":"g12sQi#ss#&1","cipher":"aes-128-gcm"}
+  - {"name":"美国_Telegram@kxswa_1","type":"ss","server":"140.99.53.242","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
+  - {"name":"美国_Telegram@kxswa_2","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_3","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm4.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_4","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_5","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"yhnsb.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_6","type":"vmess","server":"172.64.153.211","port":443,"cipher":"auto","uuid":"6e751712-9569-5187-86ea-8f585ad99105","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"schereswed.softwarenews.store","network":"ws","ws-opts":{"path":"/api01","headers":{"host":"schereswed.softwarenews.store"}}}
+  - {"name":"美国_Telegram@kxswa_7","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hdlb2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_8","type":"vless","server":"172.66.44.172","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf-wkrs-pages-vless-aoy.pages.dev"}}}
+  - {"name":"美国_Telegram@kxswa_9","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_10","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hdlb.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_11","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_12","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_13","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"zjg.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_14","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_15","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_16","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_17","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ylsl.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_18","type":"vless","server":"542.outline-vpn.cloud","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf-wkrs-pages-vless-aoy.pages.dev"}}}
+  - {"name":"美国_Telegram@kxswa_19","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_20","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_21","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ml3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_22","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_23","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ml3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_24","type":"vless","server":"172.66.44.82","port":443,"uuid":"c688395a-b36b-4071-974b-bc91ac2ad2c4","tls":true,"servername":"edtunnel-b6t.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"edtunnel-b6t.pages.dev"}}}
+  - {"name":"美国_Telegram@kxswa_25","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_26","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"kltl.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_27","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_28","type":"vless","server":"665.outline-vpn.cloud","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf-wkrs-pages-vless-aoy.pages.dev"}}}
+  - {"name":"美国_1","type":"vmess","server":"140.99.129.51","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.44945510.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.44945510.xyz"}}}
+  - {"name":"美国_2","type":"vmess","server":"192.74.228.184","port":443,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.59274706.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.59274706.xyz"}}}
+  - {"name":"台湾_1","type":"vmess","server":"198.2.208.165","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.62317155.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.62317155.xyz"}}}
+  - {"name":"香港_1","type":"vmess","server":"142.4.110.29","port":52925,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"韩国_1","type":"vmess","server":"192.74.234.211","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.45022499.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.45022499.xyz"}}}
+  - {"name":"瑞典_1","type":"vmess","server":"142.4.115.153","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.60321304.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.60321304.xyz"}}}
+  - {"name":"澳大利亚_1","type":"vmess","server":"192.74.232.242","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.54092415.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.54092415.xyz"}}}
+  - {"name":"芬兰","type":"vmess","server":"192.74.234.83","port":54983,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"卢森堡_1","type":"vmess","server":"137.175.88.217","port":40023,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"土耳其_1","type":"vmess","server":"38.54.250.55","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.80128693.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.80128693.xyz"}}}
+  - {"name":"爱尔兰","type":"vmess","server":"171.22.116.14","port":41995,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"埃及_1","type":"vmess","server":"45.131.229.56","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.72470068.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.72470068.xyz"}}}
+  - {"name":"德国","type":"vmess","server":"140.99.141.3","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.63654364.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.63654364.xyz"}}}
+  - {"name":"安徽","type":"vmess","server":"45.83.130.173","port":58082,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"山东联通","type":"vmess","server":"142.4.100.45","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.26167530.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.26167530.xyz"}}}
+  - {"name":"_1","type":"vmess","server":"156.225.67.126","port":443,"cipher":"auto","uuid":"3a3c8a9c-334e-4360-adb8-a80a57ddcbbf","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.16046626.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.16046626.xyz"}}}
+  - {"name":"_2","type":"vmess","server":"156.225.67.233","port":443,"cipher":"auto","uuid":"93503dd5-245a-4eb1-ae2a-57ab9f2b3c29","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.47734647.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.47734647.xyz"}}}
+  - {"name":"_3","type":"vmess","server":"45.199.138.158","port":32774,"cipher":"auto","uuid":"f5250c4e-f855-4eff-b73c-a02226d42fe7","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"_4","type":"vmess","server":"64.32.4.55","port":43556,"cipher":"auto","uuid":"8653004f-de67-44c2-9cce-e0830933fb03","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"_5","type":"vmess","server":"140.99.128.101","port":32712,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"_6","type":"vmess","server":"45.86.8.21","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.29004003.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.29004003.xyz"}}}
+  - {"name":"_7","type":"vmess","server":"45.12.144.75","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.11232252.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.11232252.xyz"}}}
+  - {"name":"_8","type":"vmess","server":"156.225.67.170","port":35977,"cipher":"auto","uuid":"bd249e37-7359-41ee-84a7-09e49e0ec5c4","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"_9","type":"vmess","server":"156.225.67.6","port":443,"cipher":"auto","uuid":"d7735058-1dac-4618-99ff-0aa0441ec2d7","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.20163322.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.20163322.xyz"}}}
+  - {"name":"_10","type":"vmess","server":"198.2.223.7","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.45202449.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.45202449.xyz"}}}
+  - {"name":"_11","type":"vmess","server":"156.225.67.80","port":443,"cipher":"auto","uuid":"3fd637ad-46fe-4f85-a6e8-86b00bca1122","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.13340198.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.13340198.xyz"}}}
+  - {"name":"_12","type":"vmess","server":"198.2.208.87","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.71653718.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.71653718.xyz"}}}
+  - {"name":"_13","type":"vmess","server":"156.225.67.16","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.84938863.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.84938863.xyz"}}}
+  - {"name":"_14","type":"vmess","server":"156.225.67.131","port":443,"cipher":"auto","uuid":"515bcb4d-0ba1-4cae-87cf-a047007eec54","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.73938022.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.73938022.xyz"}}}
+  - {"name":"_15","type":"vmess","server":"156.225.67.164","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.75544744.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.75544744.xyz"}}}
+  - {"name":"_16","type":"vmess","server":"45.12.131.214","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.80817644.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.80817644.xyz"}}}
+  - {"name":"_17","type":"vmess","server":"198.200.56.104","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.62618992.xyz","network":"ws","ws-opts":{"path":"/path/211407033002","headers":{"host":"www.62618992.xyz"}}}
+  - {"name":"美国_3","type":"vmess","server":"74.217.182.71","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.60844181.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.60844181.xyz"}}}
+  - {"name":"美国_4","type":"vmess","server":"45.86.8.49","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.38713460.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.38713460.xyz"}}}
+  - {"name":"美国_5","type":"vmess","server":"140.99.129.18","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.79204387.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.79204387.xyz"}}}
+  - {"name":"台湾_2","type":"vmess","server":"193.202.44.197","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.80201099.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.80201099.xyz"}}}
+  - {"name":"香港_2","type":"vmess","server":"199.188.105.24","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.33021824.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.33021824.xyz"}}}
+  - {"name":"俄罗斯","type":"vmess","server":"192.74.228.184","port":443,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.59274706.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.59274706.xyz"}}}
+  - {"name":"英国","type":"vmess","server":"142.4.114.101","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.11141292.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.11141292.xyz"}}}
+  - {"name":"日本_1","type":"vmess","server":"137.175.88.217","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.33337768.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.33337768.xyz"}}}
+  - {"name":"日本_2","type":"vmess","server":"45.131.229.56","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.72470068.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.72470068.xyz"}}}
+  - {"name":"韩国_2","type":"vmess","server":"140.99.141.3","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.63654364.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.63654364.xyz"}}}
+  - {"name":"瑞典_2","type":"vmess","server":"142.4.103.146","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.42576874.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.42576874.xyz"}}}
+  - {"name":"澳大利亚_2","type":"vmess","server":"108.186.208.156","port":53404,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"卢森堡_2","type":"vmess","server":"142.4.110.42","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.19458162.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.19458162.xyz"}}}
+  - {"name":"土耳其_2","type":"vmess","server":"140.99.129.51","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.44945510.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.44945510.xyz"}}}
+  - {"name":"立陶宛","type":"vmess","server":"171.22.116.14","port":41995,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"比利时","type":"vmess","server":"192.74.234.211","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.45022499.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.45022499.xyz"}}}
+  - {"name":"埃及_2","type":"vmess","server":"142.0.129.245","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.64830206.xyz","network":"ws","ws-opts":{"path":"/path/020527290101","headers":{"host":"www.64830206.xyz"}}}
+  - {"name":"_18","type":"vmess","server":"140.99.129.10","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.80952070.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.80952070.xyz"}}}
+  - {"name":"_19","type":"vmess","server":"142.4.100.44","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.26167530.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.26167530.xyz"}}}
+  - {"name":"_20","type":"vmess","server":"142.4.103.145","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.42576874.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.42576874.xyz"}}}
+  - {"name":"_21","type":"vmess","server":"192.74.234.83","port":54983,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"_22","type":"vmess","server":"199.180.102.12","port":443,"cipher":"auto","uuid":"b65da4af-a12a-4a59-9316-4549e12ba62c","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.73332463.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.73332463.xyz"}}}
+  - {"name":"_23","type":"vmess","server":"45.83.130.173","port":58082,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"_24","type":"vmess","server":"45.153.203.65","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.30905089.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.30905089.xyz"}}}
+  - {"name":"_25","type":"vmess","server":"45.153.203.64","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.30905089.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.30905089.xyz"}}}
+  - {"name":"_26","type":"vmess","server":"45.131.229.55","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.72470068.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.72470068.xyz"}}}
+  - {"name":"_27","type":"vmess","server":"198.2.208.164","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.62317155.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.62317155.xyz"}}}
+  - {"name":"_28","type":"vmess","server":"38.54.250.50","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.80128693.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.80128693.xyz"}}}
+  - {"name":"_29","type":"vmess","server":"193.202.44.195","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.80201099.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.80201099.xyz"}}}
+  - {"name":"_30","type":"vmess","server":"142.4.115.152","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.60321304.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.60321304.xyz"}}}
+  - {"name":"_31","type":"vmess","server":"108.186.208.157","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.17661867.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.17661867.xyz"}}}
+  - {"name":"_32","type":"vmess","server":"108.186.116.189","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.42576874.xyz","network":"ws","ws-opts":{"path":"/path/172025033425","headers":{"host":"www.42576874.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -111,11 +722,98 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HG-GZ @hwzy0
-      - HG-NJ @hwzy0
-      - HG-BJ @hwzy0
-      - 🇭🇰Hong Kong Premium 01 - 习近平机场.com
-      - 日本自建
+      - 美国_Telegram@kxswa_1
+      - 美国_Telegram@kxswa_2
+      - 美国_Telegram@kxswa_3
+      - 美国_Telegram@kxswa_4
+      - 美国_Telegram@kxswa_5
+      - 美国_Telegram@kxswa_6
+      - 美国_Telegram@kxswa_7
+      - 美国_Telegram@kxswa_8
+      - 美国_Telegram@kxswa_9
+      - 美国_Telegram@kxswa_10
+      - 美国_Telegram@kxswa_11
+      - 美国_Telegram@kxswa_12
+      - 美国_Telegram@kxswa_13
+      - 美国_Telegram@kxswa_14
+      - 美国_Telegram@kxswa_15
+      - 美国_Telegram@kxswa_16
+      - 美国_Telegram@kxswa_17
+      - 美国_Telegram@kxswa_18
+      - 美国_Telegram@kxswa_19
+      - 美国_Telegram@kxswa_20
+      - 美国_Telegram@kxswa_21
+      - 美国_Telegram@kxswa_22
+      - 美国_Telegram@kxswa_23
+      - 美国_Telegram@kxswa_24
+      - 美国_Telegram@kxswa_25
+      - 美国_Telegram@kxswa_26
+      - 美国_Telegram@kxswa_27
+      - 美国_Telegram@kxswa_28
+      - 美国_1
+      - 美国_2
+      - 台湾_1
+      - 香港_1
+      - 韩国_1
+      - 瑞典_1
+      - 澳大利亚_1
+      - 芬兰
+      - 卢森堡_1
+      - 土耳其_1
+      - 爱尔兰
+      - 埃及_1
+      - 德国
+      - 安徽
+      - 山东联通
+      - _1
+      - _2
+      - _3
+      - _4
+      - _5
+      - _6
+      - _7
+      - _8
+      - _9
+      - _10
+      - _11
+      - _12
+      - _13
+      - _14
+      - _15
+      - _16
+      - _17
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 台湾_2
+      - 香港_2
+      - 俄罗斯
+      - 英国
+      - 日本_1
+      - 日本_2
+      - 韩国_2
+      - 瑞典_2
+      - 澳大利亚_2
+      - 卢森堡_2
+      - 土耳其_2
+      - 立陶宛
+      - 比利时
+      - 埃及_2
+      - _18
+      - _19
+      - _20
+      - _21
+      - _22
+      - _23
+      - _24
+      - _25
+      - _26
+      - _27
+      - _28
+      - _29
+      - _30
+      - _31
+      - _32
 
 rules:
 # 本地/局域网地址
