@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-08-31 11:29:25
+# 客户端：Clash
+# 创建时间：2023-08-31 11:33:12
 # 使用模版：V2RaySE 默认模版
-# 节点数量：92
+# 节点数量：88
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -29,27 +28,23 @@ proxies:
   - {"name":"美国_Telegram@kxswa_5","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"yhnsb.shabijichang.com"}}}
   - {"name":"美国_Telegram@kxswa_6","type":"vmess","server":"172.64.153.211","port":443,"cipher":"auto","uuid":"6e751712-9569-5187-86ea-8f585ad99105","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"schereswed.softwarenews.store","network":"ws","ws-opts":{"path":"/api01","headers":{"host":"schereswed.softwarenews.store"}}}
   - {"name":"美国_Telegram@kxswa_7","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hdlb2.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_8","type":"vless","server":"172.66.44.172","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf-wkrs-pages-vless-aoy.pages.dev"}}}
-  - {"name":"美国_Telegram@kxswa_9","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm3.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_10","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hdlb.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_11","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_12","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb3.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_13","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"zjg.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_14","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm2.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_15","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_16","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_17","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ylsl.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_18","type":"vless","server":"542.outline-vpn.cloud","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf-wkrs-pages-vless-aoy.pages.dev"}}}
-  - {"name":"美国_Telegram@kxswa_19","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_20","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_21","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ml3.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_22","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_23","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ml3.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_24","type":"vless","server":"172.66.44.82","port":443,"uuid":"c688395a-b36b-4071-974b-bc91ac2ad2c4","tls":true,"servername":"edtunnel-b6t.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"edtunnel-b6t.pages.dev"}}}
-  - {"name":"美国_Telegram@kxswa_25","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg2.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_26","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"kltl.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_27","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg2.shabijichang.com"}}}
-  - {"name":"美国_Telegram@kxswa_28","type":"vless","server":"665.outline-vpn.cloud","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf-wkrs-pages-vless-aoy.pages.dev"}}}
+  - {"name":"美国_Telegram@kxswa_8","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_9","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"hdlb.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_10","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_11","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_12","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"zjg.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_13","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mm2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_14","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_15","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_16","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ylsl.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_17","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_18","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_19","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ml3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_20","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_21","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"ml3.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_22","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"3ccbc585-baa6-4bc3-bd44-5b6c54406bfc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg2.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_23","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"kltl.shabijichang.com"}}}
+  - {"name":"美国_Telegram@kxswa_24","type":"vmess","server":"fd.shabijichang.com","port":80,"cipher":"auto","uuid":"df7abf48-196d-4dbd-b981-4d0c4f4bb446","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sdyg2.shabijichang.com"}}}
   - {"name":"美国_1","type":"vmess","server":"140.99.129.51","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.44945510.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.44945510.xyz"}}}
   - {"name":"美国_2","type":"vmess","server":"192.74.228.184","port":443,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.59274706.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.59274706.xyz"}}}
   - {"name":"台湾_1","type":"vmess","server":"198.2.208.165","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"www.62317155.xyz","network":"ws","ws-opts":{"path":"/path/030923040225","headers":{"host":"www.62317155.xyz"}}}
@@ -144,10 +139,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
@@ -242,10 +233,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
@@ -340,10 +327,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
@@ -437,10 +420,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
@@ -534,10 +513,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
@@ -631,10 +606,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
@@ -745,10 +716,6 @@ proxy-groups:
       - 美国_Telegram@kxswa_22
       - 美国_Telegram@kxswa_23
       - 美国_Telegram@kxswa_24
-      - 美国_Telegram@kxswa_25
-      - 美国_Telegram@kxswa_26
-      - 美国_Telegram@kxswa_27
-      - 美国_Telegram@kxswa_28
       - 美国_1
       - 美国_2
       - 台湾_1
