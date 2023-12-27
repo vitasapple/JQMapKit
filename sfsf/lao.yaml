@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-12-27 12:53:53
+# 客户端：Clash.Meta
+# 创建时间：2023-12-27 12:57:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：32
+# 节点数量：43
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -117,6 +118,17 @@ proxies:
   - {"name":"荷兰-3.16MB/s","type":"vmess","server":"45.58.153.24","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702392255355"}}
   - {"name":"越南-1.61MB/s","type":"trojan","server":"103.166.185.11","port":443,"udp":true,"password":"mothai3456789080898","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
   - {"name":"🇬🇧","type":"ss","server":"178.62.12.184","port":28290,"password":"Sq9mcBiG0N86OjNKJ5bkZ8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"德国174","type":"vless","server":"de.msv2ray.sbs","port":443,"uuid":"--MsV2ray--MsV2ray--MsV2ray--","tls":true,"servername":"ws.MsV2ray.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"ws.MsV2ray.sbs"}}}
+  - {"name":"英国-2.47MB/s","type":"ss","server":"52.142.161.9","port":34424,"password":"64LbKHnB3IO759ueEnhgMG","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-225.2KB/s","type":"ss","server":"tvc.sabz.top","port":15171,"password":"rct9lNBCpv79OOcJmjIZ0mHxGSWnn0DXmMPgtBeQqztu","cipher":"aes-128-gcm"}
+  - {"name":"荷兰-3.83MB/s","type":"ss","server":"45.87.153.246","port":6199,"password":"f7EI0dGWQM42T8gwN9CZIj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-2.67MB/s","type":"ss","server":"gdct003.theyydsnode.top","port":10598,"password":"48b8946e-0933-4827-9cff-c800f8d80c60","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-4.36MB/s","type":"vmess","server":"cm.awslcn.info","port":25241,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm.awslcn.info"}}}
+  - {"name":"中转节点-3.22MB/s","type":"vmess","server":"us2.awslcn.info","port":25257,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us2.awslcn.info"}}}
+  - {"name":"英国-4.94MB/s","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
+  - {"name":"香港-4.91MB/s","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
+  - {"name":"越南-247.6KB/s","type":"trojan","server":"58.187.206.121","port":443,"udp":true,"password":"522NIIFovz","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
+  - {"name":"菲律宾-522.0KB/s","type":"vmess","server":"38.54.36.74","port":45589,"cipher":"auto","uuid":"1493d12a-5f0e-4094-9c74-08254fb9ed7c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -155,6 +167,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -193,6 +216,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -231,6 +265,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
   - name: 📲 电报信息
     type: select
     proxies:
@@ -268,6 +313,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -305,6 +361,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -342,6 +409,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -396,6 +474,17 @@ proxy-groups:
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
       - 🇬🇧
+      - 德国174
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
 
 rules:
 # 本地/局域网地址
