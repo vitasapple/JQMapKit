@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-27 13:01:06
+# 创建时间：2023-12-27 13:02:02
 # 使用模版：V2RaySE 默认模版
-# 节点数量：31
+# 节点数量：30
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -115,7 +115,6 @@ proxies:
   - {"name":"越南-2.88MB/s","type":"vmess","server":"hanoi4.5gsieutocdo.com","port":80,"cipher":"auto","uuid":"c95357eb-2869-4511-8940-f0dc5e1ec9b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5gsieutocdo.club","headers":{"host":"dl.kgvn.garenanow.com"}}}
   - {"name":"美国-170.0KB/s","type":"vmess","server":"172.233.188.166","port":11397,"cipher":"auto","uuid":"20e0d67d-f7aa-4bb1-daae-b7f217306bba","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"香港-4.26MB/s","type":"trojan","server":"ru01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
-  - {"name":"TG每天更新@jiedianh1","type":"ss","server":"193.149.187.225","port":30306,"password":"hcHdGO7IWqrGsTEXIegZcr","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -152,7 +151,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -189,7 +187,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -226,7 +223,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
   - name: 📲 电报信息
     type: select
     proxies:
@@ -262,7 +258,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -298,7 +293,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -334,7 +328,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -387,7 +380,6 @@ proxy-groups:
       - 越南-2.88MB/s
       - 美国-170.0KB/s
       - 香港-4.26MB/s
-      - TG每天更新@jiedianh1
 
 rules:
 # 本地/局域网地址
