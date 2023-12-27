@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-27 13:02:02
+# 创建时间：2023-12-27 13:02:50
 # 使用模版：V2RaySE 默认模版
-# 节点数量：30
+# 节点数量：20
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -105,16 +105,6 @@ proxies:
   - {"name":"加拿大-617.1KB/s","type":"vmess","server":"23.227.39.84","port":8080,"cipher":"auto","uuid":"969f1909-c0d3-4c30-813d-3aec5c838b7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/1IKYjV0r/","headers":{"host":"dongtaiwang13.dtku47.xyz"}}}
   - {"name":"未知国家-3.48MB/s","type":"vmess","server":"162.159.128.233","port":2096,"cipher":"auto","uuid":"c58c0655-d722-4ad1-8ad5-2452c77a753a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Amsterdam","headers":{"host":"stiyUs6usw.pouriya.cf"}}}
   - {"name":"未知国家-6.03MB/s","type":"vmess","server":"104.16.123.175","port":2083,"cipher":"auto","uuid":"c079a4b0-387a-439c-87d3-9e8456bc3dac","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"de1.xv2ray.net"}}}
-  - {"name":"中转节点-1.77MB/s","type":"ss","server":"service.ouluyun9803.com","port":20009,"password":"057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中转节点-5.95MB/s","type":"ssr","server":"cm03.newcome.xyz","port":6703,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB","group":"SSRProvider"}
-  - {"name":"韩国-13.45MB/s","type":"trojan","server":"unlk4.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen","port":21152,"udp":true,"password":"682ac5bf-c171-4c8b-a896-a9a6ac327a53","sni":"ip3691376078.mobgslb.tbcache.com","skip-cert-verify":true}
-  - {"name":"中转节点-1.38MB/s","type":"ss","server":"service.ouluyun9803.com","port":26666,"password":"057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中转节点-4.27MB/s","type":"ss","server":"gdct003.theyydsnode.top","port":10519,"password":"ceeea932-ca6c-4f26-850e-67ba896e2e18","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"日本-122.4KB/s","type":"vmess","server":"64.176.59.68","port":59350,"cipher":"auto","uuid":"5821ac21-8e3f-4c8b-832d-a55190c944e9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"日本-3.87MB/s","type":"vmess","server":"64.176.58.7","port":14431,"cipher":"auto","uuid":"ff681ba6-55f5-4e79-8f40-ad6bbdf14044","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"越南-2.88MB/s","type":"vmess","server":"hanoi4.5gsieutocdo.com","port":80,"cipher":"auto","uuid":"c95357eb-2869-4511-8940-f0dc5e1ec9b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5gsieutocdo.club","headers":{"host":"dl.kgvn.garenanow.com"}}}
-  - {"name":"美国-170.0KB/s","type":"vmess","server":"172.233.188.166","port":11397,"cipher":"auto","uuid":"20e0d67d-f7aa-4bb1-daae-b7f217306bba","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"香港-4.26MB/s","type":"trojan","server":"ru01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -141,16 +131,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -177,16 +157,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -213,16 +183,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
   - name: 📲 电报信息
     type: select
     proxies:
@@ -248,16 +208,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -283,16 +233,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -318,16 +258,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -370,16 +300,6 @@ proxy-groups:
       - 加拿大-617.1KB/s
       - 未知国家-3.48MB/s
       - 未知国家-6.03MB/s
-      - 中转节点-1.77MB/s
-      - 中转节点-5.95MB/s
-      - 韩国-13.45MB/s
-      - 中转节点-1.38MB/s
-      - 中转节点-4.27MB/s
-      - 日本-122.4KB/s
-      - 日本-3.87MB/s
-      - 越南-2.88MB/s
-      - 美国-170.0KB/s
-      - 香港-4.26MB/s
 
 rules:
 # 本地/局域网地址
