@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-12-27 09:38:04
+# 客户端：Clash.Meta
+# 创建时间：2023-12-27 12:49:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：21
+# 节点数量：183
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,16 +86,158 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"日本-4.41MB/s","type":"ss","server":"57.180.13.136","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"中转节点-5.40MB/s","type":"ss","server":"nc.ct1.go002.xyz","port":19551,"password":"dcbc1c7f-c323-4365-bd48-cf767f9081ce","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"韩国-15.55MB/s","type":"trojan","server":"UNLK5.LVWF8N-HH8E-2300-NMOO-D2E9NAOBEACN.9D8F269F96B25232-759CBB36D6548597.KAUFEN","port":25002,"udp":true,"password":"92d3e5b6-6e8c-483b-a72b-000568d2e814","sni":"ip3691376078.mobgslb.tbcache.com","skip-cert-verify":true}
-  - {"name":"越南-4.35MB/s","type":"trojan","server":"103.197.184.93","port":443,"udp":true,"password":"baa85f59-844b-4aa6-95e6-1747d9b78e8a","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
-  - {"name":"中转节点-5.04MB/s","type":"vmess","server":"yes.cnmjcn.net","port":16626,"cipher":"auto","uuid":"c2c76420-257f-492a-b20f-6560f3bfa78d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com"}}}
-  - {"name":"泰国-439.1KB/s","type":"vmess","server":"103.114.201.143","port":59487,"cipher":"auto","uuid":"51fb562e-0a9b-4c27-e4d8-6f4883bb5165","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"加拿大-832.5KB/s","type":"ss","server":"38.91.107.37","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
-  - {"name":"加拿大-826.4KB/s","type":"ss","server":"38.91.107.37","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
-  - {"name":"加拿大-846.8KB/s","type":"ss","server":"38.91.107.37","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
-  - {"name":"俄罗斯联邦-2.20MB/s","type":"vmess","server":"46.29.166.237","port":47555,"cipher":"auto","uuid":"0c49cd19-2758-4d38-e6a8-11f2d6635860","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇲🇴澳门","type":"ss","server":"36.139.239.208","port":34201,"password":"e08dcd60-b48d-4dd0-ac3f-b16c77dd51d7","cipher":"aes-256-gcm"}
+  - {"name":"aka","type":"ss","server":"nc.cm.go002.xyz","port":19521,"password":"dcbc1c7f-c323-4365-bd48-cf767f9081ce","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰香港","type":"ss","server":"nc.ct1.go002.xyz","port":19511,"password":"dcbc1c7f-c323-4365-bd48-cf767f9081ce","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"香港[高速试用]","type":"ss","server":"119.145.148.90","port":30278,"password":"rhiTHQPTjcAABmzk","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_1","type":"ss","server":"195.85.115.125","port":55264,"password":"6HWOoCSVtS7a2fFk0A4pwc","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"TG:@jiedianh 每天更新+(12)","type":"ss","server":"165.3.122.145","port":10010,"password":"58a337ce-b937-45e9-b5aa-20d78c291072","cipher":"aes-256-gcm"}
+  - {"name":"每天更新TG：@jiedianh","type":"trojan","server":"hk3.iqiyi-tv.site","port":17703,"udp":true,"password":"fe066c73-d2f4-4471-9d38-beb1ea6c2068","sni":"data.52daishu.life","skip-cert-verify":true}
+  - {"name":"TG每日更新 @jiedianh","type":"vless","server":"gus.mcbb.top","port":443,"udp":true,"uuid":"4add1cd4-12d9-42da-b0c1-2ed8d2a84d29","tls":true,"network":"ws","ws-opts":{"path":"/hdjksdhfkjawss"}}
+  - {"name":"🇳🇱_NL_荷兰","type":"vless","server":"45.131.4.88","port":443,"udp":true,"uuid":"376b9861-2fc6-4647-959c-18185cd9c95a","tls":true,"network":"ws","ws-opts":{"path":"/fflsws"}}
+  - {"name":"TG每天更新@jiedianh_1","type":"ssr","server":"91.206.93.157","port":16523,"password":"lncn.org h6e","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin"}
+  - {"name":"香港_R_988","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35232,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"香港_R_1103","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":45007,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"香港_R_1154","type":"ssr","server":"angular-cdn-1.telescopes.work","port":45007,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"香港_R_911","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35151,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"香港_R_863","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35092,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"台湾_R_1209","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":35236,"password":"UU8O1PQ","cipher":"aes-256-cfb","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"台湾_R_821","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35046,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"台湾_R_1170","type":"ssr","server":"angular-cdn-1.telescopes.work","port":45013,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"台湾_R_1040","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35245,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"泰国_R_1013","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35240,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"印度_R_868","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35093,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"澳大利亚_R_816","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35038,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"越南_R_837","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35066,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"马来西亚_R_1142","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":45056,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"爱沙尼亚_R_905","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35137,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"南非_R_1034","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35244,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"加拿大_R_890","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35105,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"阿塞拜疆_R_899","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35128,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"日本_R_1048","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35249,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"日本_R_1129","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":45009,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"瑞士_R_1018","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35241,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"菲律宾_R_811","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35033,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"柬埔寨_R_992","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35234,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"阿联酋_R_977","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35230,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"新加坡_R_806","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35026,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"新加坡_R_826","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35051,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"新加坡_R_1116","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":45011,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"韩国_R_873","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35099,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"韩国_R_1180","type":"ssr","server":"angular-cdn-1.telescopes.work","port":45010,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"韩国_R_877","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35101,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"韩国_R_878","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35101,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"美国_R_884","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35103,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"美国_R_780","type":"ssr","server":"angular-cdn-3.telescopeclothing.com","port":35009,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"美国_R_1108","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":45026,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"美国_R_1159","type":"ssr","server":"angular-cdn-1.telescopes.work","port":45026,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"英国_R_1111","type":"ssr","server":"react-cdn-004.telescopeclothing.com","port":45014,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"英国_R_1162","type":"ssr","server":"angular-cdn-1.telescopes.work","port":45014,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"俄罗斯_R_982","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35231,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"尼日利亚_R_921","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35157,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"土耳其_R_841","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35067,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"冰岛_R_932","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35179,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"匈牙利_R_972","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35209,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"保加利亚_R_937","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35180,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"西班牙_R_942","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35182,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"乌克兰_R_947","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35183,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"以色列_R_952","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35185,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"荷兰_R_794","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35020,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"阿根廷_R_894","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35121,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"巴西_R_1029","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35243,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"印度尼西亚_R_962","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35197,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"肯尼亚_R_1050","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35250,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"意大利_R_967","type":"ssr","server":"angular-cdn-2.telescopes.work","port":35208,"password":"hGkQ6915tD","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"auth_aes128_md5","obfs-param":"ajax.microsoft.com","protocol-param":"325761:aPhmHIL5Ax"}
+  - {"name":"HK@jiedianh","type":"vless","server":"7dc12.awayne.cloud","port":80,"uuid":"6d76bba6-a923-4b84-a674-87376e0bf523","network":"ws","ws-opts":{"path":"/vless"}}
+  - {"name":"洛杉矶@jiedianh","type":"vless","server":"c.mac2win.top","port":8080,"uuid":"59bb5015-fe6b-48f1-bde6-0a2e7dc0efe8","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"美国@jiedianh","type":"vless","server":"a.mac2win.top","port":8080,"uuid":"67ac2966-c633-4fbe-92dd-8c666881c6de","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"首尔-163net-500M-电信/移动/联通","type":"vless","server":"kr.eecdn.r-yu.me","port":22910,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true,"servername":"www.lovelive-anime.jp","network":"grpc","grpc-opts":{"grpc-service-name":"JAVAService"},"reality-opts":{"public-key":"6wHAHIyJLNsNlvf0XNbBbYb8GoW5YCYVvyrIoDg1qBs","short-id":"b1522630"},"client-fingerprint":"firefox"}
+  - {"name":"东京-NTT-500M-移动/联通","type":"vless","server":"jp.eecdn.r-yu.me","port":52110,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true,"servername":"www.lovelive-anime.jp","network":"grpc","grpc-opts":{"grpc-service-name":"JAVAService"},"reality-opts":{"public-key":"7z1YCHkaIxl_wF83f1tnZciZGHmxaDEo4Z8BVis1LA8","short-id":"b1522631"},"client-fingerprint":"firefox"}
+  - {"name":"狮城-Cogent-500M-移动/联通","type":"vless","server":"sg.eecdn.r-yu.me","port":39460,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true,"servername":"www.lovelive-anime.jp","network":"grpc","grpc-opts":{"grpc-service-name":"JAVAService"},"reality-opts":{"public-key":"Q7_pJJHjQIa2LrCMcOzwvXmqeVW1CIeoMIe1WxpcmzU","short-id":"b1522632"},"client-fingerprint":"firefox"}
+  - {"name":"美国-Vultr-1000M-Global","type":"vless","server":"us.eecdn.r-yu.me","port":23333,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true,"servername":"www.lovelive-anime.jp","network":"grpc","grpc-opts":{"grpc-service-name":"JAVAService"},"reality-opts":{"public-key":"VQC7doiCM9egWHsn5mgCSAwoXZdC4khYHkQF2b25lEs","short-id":"b1522633"},"client-fingerprint":"firefox"}
+  - {"name":"瑞典-Vultr-1000M-Global","type":"vless","server":"eu.eecdn.r-yu.me","port":23333,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true,"servername":"www.lovelive-anime.jp","network":"grpc","grpc-opts":{"grpc-service-name":"JAVAService"},"reality-opts":{"public-key":"YGpm4nnzh-ZF9aBk2F4OnBGDfTx08_CzUaeBk8UILho","short-id":"b1522635"},"client-fingerprint":"qq"}
+  - {"name":"defaultName_2","type":"vmess","server":"YXV0bzowZmZmM2Q4Yy01NzRmLTQ1YTgtZWRkYy03YTdmNmY3N2ViNDFANDUuMTM4LjcwLjI0NzozNDY2MA?remarks=%E5%8A%A0%E6%8B%BF%E5%A4%A7%F0%9F%87%A8%F0%9F%87%A6@jiedianh&path=/write.php&obfs=websocket&alterId=0","port":null,"cipher":"auto","uuid":"jiedianh&path=/write.php&obfs=websocket&alterId=0","alterId":0,"tls":false,"skip-cert-verify":true}
+  - {"name":"TG每天更新@jiedianh_2","type":"ss","server":"78.153.139.8","port":60820,"password":"1JU7dDZCviBzxZn3vjRx5Z","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"俄罗斯B","type":"ssr","server":"195.133.11.8","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯A","type":"ssr","server":"91.206.93.157","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯C","type":"ssr","server":"45.8.159.77","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯D","type":"ssr","server":"45.8.158.11","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯E","type":"ssr","server":"188.119.65.67","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯F","type":"ssr","server":"45.89.229.158","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯G","type":"ssr","server":"45.8.158.182","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯H","type":"ssr","server":"45.130.146.33","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯I","type":"ssr","server":"45.8.159.66","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯J","type":"ssr","server":"45.89.228.200","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯K","type":"ssr","server":"188.119.65.150","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"俄罗斯L","type":"ssr","server":"91.206.93.152","port":11556,"password":"lncn.org feq","cipher":"aes-256-ctr","obfs":"plain","protocol":"origin","group":"Lncn.org"}
+  - {"name":"rn@jiediannh1","type":"ss","server":"rn.youkovo.eu.org","port":17891,"password":"pQDmgCrwBpsGzncYL0xz5Zj1Z0BYE8RlB8UykkTx9kHw","cipher":"aes-256-gcm"}
+  - {"name":"中转节点-3.35MB/s","type":"vmess","server":"cm1.awslcn.info","port":25258,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm1.awslcn.info"}}}
+  - {"name":"美国-289.8KB/s","type":"ss","server":"47.76.190.214","port":80,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"香港-1.52MB/s","type":"ss","server":"47.243.34.184","port":80,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"obfs-local","plugin-opts":{"mode":"websocket"}}
+  - {"name":"加拿大-3.50MB/s","type":"trojan","server":"frontend.kuangbiaoyun.com","port":40003,"udp":true,"password":"9737c85e-ad5c-48f5-93f6-9bdb0361d04c","skip-cert-verify":true}
+  - {"name":"日本-3.76MB/s","type":"trojan","server":"in01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
+  - {"name":"加拿大-3.35MB/s","type":"trojan","server":"68.233.121.121","port":40003,"udp":true,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","skip-cert-verify":true}
+  - {"name":"加拿大-3.42MB/s","type":"trojan","server":"frontend.kuangbiaoyun.com","port":40003,"udp":true,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","sni":"frontend.kuangbiaoyun.com","skip-cert-verify":true}
+  - {"name":"加拿大-3.64MB/s","type":"trojan","server":"68.233.121.121","port":40004,"udp":true,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","skip-cert-verify":true}
+  - {"name":"越南-2.01MB/s","type":"trojan","server":"5sao.5gtocdocao.com","port":443,"udp":true,"password":"7a2c5296-683d-48db-9856-373cafac48b5","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
+  - {"name":"越南-853.5KB/s","type":"trojan","server":"103.166.185.11","port":443,"udp":true,"password":"mothai3456789080898","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
+  - {"name":"美国🇺🇸cf@jiediannh1","type":"vless","server":"www.visa.com","port":8880,"uuid":"c7161402-d338-4764-8a97-bd8638aada7f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"cfvless节点@jiediannh1","type":"vless","server":"www.visa.com","port":8880,"uuid":"2ac1cc4f-0e8f-42aa-be3a-bbb4d647c611","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"新加坡(2024-01-01)@jiediannh1","type":"vless","server":"asia1.fufo.org","port":80,"uuid":"e947fd40-a30f-11ee-b639-205c6d5f5d78","network":"ws","ws-opts":{"path":"/vlws"}}
+  - {"name":"Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1","type":"ss","server":"china4.one.edu.kg","port":10073,"password":"2c4680c0-0ba0-45ac-88b9-9de70d74803d","cipher":"aes-128-gcm"}
+  - {"name":"Akamai+🇸🇬+新加坡@jiediannh1","type":"ss","server":"china2.one.edu.kg","port":10025,"password":"2c4680c0-0ba0-45ac-88b9-9de70d74803d","cipher":"aes-128-gcm"}
+  - {"name":"G-Core+Labs+🇭🇰香港@jiediannh1","type":"ss","server":"china1.one.edu.kg","port":10005,"password":"2c4680c0-0ba0-45ac-88b9-9de70d74803d","cipher":"aes-128-gcm"}
+  - {"name":"TG每天更新@jiedianh_3","type":"ss","server":"206.71.148.15","port":55907,"password":"6WtA3mLpn8yL81uhWzewwH","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"瑞典-Vultr-1000M-Global@jiediannh1","type":"vless","server":"eu.eecdn.r-yu.me","port":23333,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true}
+  - {"name":"美国-Vultr-1000M-Global@jiediannh1","type":"vless","server":"us.eecdn.r-yu.me","port":23333,"udp":true,"uuid":"6fd4ce3d-e8ef-4a0a-8113-289945b15b43","tls":true}
+  - {"name":"🇺🇸US_191 @jiediannh1","type":"vless","server":"104.21.239.191","port":80,"uuid":"c6ea407d-9f3f-4625-9dda-401837f0f68f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"🇺🇸US_210 @jiediannh1","type":"vless","server":"104.21.239.210","port":80,"uuid":"c6ea407d-9f3f-4625-9dda-401837f0f68f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"🇺🇸US_052 @jiediannh1","type":"vless","server":"104.21.239.52","port":80,"uuid":"c6ea407d-9f3f-4625-9dda-401837f0f68f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"中转节点-9.87MB/s","type":"vmess","server":"cm1.awslcn.info","port":25258,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm1.awslcn.info"}}}
+  - {"name":"越南-222.9KB/s","type":"vmess","server":"103.15.90.199","port":80,"cipher":"auto","uuid":"baa85f59-844b-4aa6-95e6-1747d9b78e8a","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vpngiangon.com","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"中转节点-22.59MB/s","type":"ssr","server":"zx01.endhigh.xyz","port":2404,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"c75be84263.microsoft.com","protocol-param":"84263:3gj7aB","group":"SSRProvider"}
+  - {"name":"台湾-499.2KB/s","type":"vmess","server":"c12.twtc.dynu.net","port":6122,"cipher":"auto","uuid":"27c6999b-58aa-48b4-b065-786d2badc074","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-8.72MB/s","type":"trojan","server":"hk02.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","sni":"hk02.trojanyyds.xyz","skip-cert-verify":true}
+  - {"name":"中转节点-1.29MB/s","type":"ssr","server":"cm03.newcome.xyz","port":6703,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB","group":"SSRProvider"}
+  - {"name":"韩国-5.88MB/s","type":"trojan","server":"64.110.90.224","port":40004,"udp":true,"password":"57edfecf-5694-4a34-8072-54a4f0636a62","skip-cert-verify":true}
+  - {"name":"越南-2.51MB/s","type":"vmess","server":"58.187.206.121","port":80,"cipher":"auto","uuid":"a2893b4e-e6f8-40cb-bae5-8b3cb8937dae","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"越南-1.42MB/s","type":"vmess","server":"vn2.network.io.vn","port":80,"cipher":"auto","uuid":"a3467009-2d14-4dfe-98e8-ad5bb4ddbe4c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/network","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"美国-4.83MB/s","type":"vmess","server":"142.171.202.130","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702650992491"}}
+  - {"name":"TG每天更新@jiedianh1","type":"ss","server":"193.149.187.225","port":30306,"password":"hcHdGO7IWqrGsTEXIegZcr","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-1.77MB/s","type":"ss","server":"service.ouluyun9803.com","port":20009,"password":"057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-5.95MB/s","type":"ssr","server":"cm03.newcome.xyz","port":6703,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB","group":"SSRProvider"}
+  - {"name":"韩国-13.45MB/s","type":"trojan","server":"unlk4.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen","port":21152,"udp":true,"password":"682ac5bf-c171-4c8b-a896-a9a6ac327a53","sni":"ip3691376078.mobgslb.tbcache.com","skip-cert-verify":true}
+  - {"name":"中转节点-1.38MB/s","type":"ss","server":"service.ouluyun9803.com","port":26666,"password":"057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-4.27MB/s","type":"ss","server":"gdct003.theyydsnode.top","port":10519,"password":"ceeea932-ca6c-4f26-850e-67ba896e2e18","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-122.4KB/s","type":"vmess","server":"64.176.59.68","port":59350,"cipher":"auto","uuid":"5821ac21-8e3f-4c8b-832d-a55190c944e9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"日本-3.87MB/s","type":"vmess","server":"64.176.58.7","port":14431,"cipher":"auto","uuid":"ff681ba6-55f5-4e79-8f40-ad6bbdf14044","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"越南-2.88MB/s","type":"vmess","server":"hanoi4.5gsieutocdo.com","port":80,"cipher":"auto","uuid":"c95357eb-2869-4511-8940-f0dc5e1ec9b1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/5gsieutocdo.club","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"美国-170.0KB/s","type":"vmess","server":"172.233.188.166","port":11397,"cipher":"auto","uuid":"20e0d67d-f7aa-4bb1-daae-b7f217306bba","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"香港-4.26MB/s","type":"trojan","server":"ru01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
+  - {"name":"越南-1.98MB/s","type":"vmess","server":"58.187.206.121","port":80,"cipher":"auto","uuid":"a2893b4e-e6f8-40cb-bae5-8b3cb8937dae","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"英国-3.83MB/s","type":"ss","server":"52.142.161.9","port":34424,"password":"64LbKHnB3IO759ueEnhgMG","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"荷兰-3.58MB/s","type":"vmess","server":"188.114.99.29","port":2053,"cipher":"auto","uuid":"72f76c36-3e3c-45b3-a61f-d8f017345958","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"b5.iraniancp.click"}}}
+  - {"name":"美国-1.40MB/s","type":"vmess","server":"172.67.229.39","port":8880,"cipher":"auto","uuid":"617c9bc4-4116-41c6-99e0-ace49a38fcdb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Jnv8ViZOUVgijjOh0p5uGjHnXIiY","headers":{"host":"fr7.tehme100.fun"}}}
+  - {"name":"德国-3.00MB/s","type":"trojan","server":"www.casperco.online","port":993,"udp":true,"password":"74811f39-8f69-4334-9e0f-a8a25d7413c1","skip-cert-verify":true}
+  - {"name":"未知国家-5.29MB/s","type":"vmess","server":"162.159.136.75","port":8443,"cipher":"auto","uuid":"a6a37e04-5e81-44c9-be53-baa3ff46eb8b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/8cda48b3","headers":{"host":"kr-207-239.shoptunnel.live"}}}
+  - {"name":"未知国家-153.9KB/s","type":"vmess","server":"104.17.161.33","port":80,"cipher":"auto","uuid":"62b024bb-3e45-41eb-e8ff-60502a4e791d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vui2","headers":{"host":"a5.mianfenyun012.eu.org"}}}
+  - {"name":"加拿大-617.1KB/s","type":"vmess","server":"23.227.39.84","port":8080,"cipher":"auto","uuid":"969f1909-c0d3-4c30-813d-3aec5c838b7d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/1IKYjV0r/","headers":{"host":"dongtaiwang13.dtku47.xyz"}}}
+  - {"name":"未知国家-3.48MB/s","type":"vmess","server":"162.159.128.233","port":2096,"cipher":"auto","uuid":"c58c0655-d722-4ad1-8ad5-2452c77a753a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Amsterdam","headers":{"host":"stiyUs6usw.pouriya.cf"}}}
+  - {"name":"未知国家-6.03MB/s","type":"vmess","server":"104.16.123.175","port":2083,"cipher":"auto","uuid":"c079a4b0-387a-439c-87d3-9e8456bc3dac","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"de1.xv2ray.net"}}}
+  - {"name":"英国-2.47MB/s","type":"ss","server":"52.142.161.9","port":34424,"password":"64LbKHnB3IO759ueEnhgMG","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"立陶宛-225.2KB/s","type":"ss","server":"tvc.sabz.top","port":15171,"password":"rct9lNBCpv79OOcJmjIZ0mHxGSWnn0DXmMPgtBeQqztu","cipher":"aes-128-gcm"}
+  - {"name":"荷兰-3.83MB/s","type":"ss","server":"45.87.153.246","port":6199,"password":"f7EI0dGWQM42T8gwN9CZIj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-2.67MB/s","type":"ss","server":"gdct003.theyydsnode.top","port":10598,"password":"48b8946e-0933-4827-9cff-c800f8d80c60","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-4.36MB/s","type":"vmess","server":"cm.awslcn.info","port":25241,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm.awslcn.info"}}}
+  - {"name":"中转节点-3.22MB/s","type":"vmess","server":"us2.awslcn.info","port":25257,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us2.awslcn.info"}}}
+  - {"name":"英国-4.94MB/s","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
+  - {"name":"香港-4.91MB/s","type":"trojan","server":"us01.trojanyyds.xyz","port":443,"udp":true,"password":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","skip-cert-verify":true}
+  - {"name":"越南-247.6KB/s","type":"trojan","server":"58.187.206.121","port":443,"udp":true,"password":"522NIIFovz","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
+  - {"name":"菲律宾-522.0KB/s","type":"vmess","server":"38.54.36.74","port":45589,"cipher":"auto","uuid":"1493d12a-5f0e-4094-9c74-08254fb9ed7c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸US_181 @jiediannh1","type":"vless","server":"104.21.239.181","port":80,"uuid":"c6ea407d-9f3f-4625-9dda-401837f0f68f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"🇺🇸US_058 @jiediannh1","type":"vless","server":"104.21.239.58","port":80,"uuid":"c6ea407d-9f3f-4625-9dda-401837f0f68f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"🇬🇧@jiedianh1","type":"ss","server":"178.62.12.184","port":28290,"password":"Sq9mcBiG0N86OjNKJ5bkZ8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US_199 @jiediannh1","type":"vless","server":"104.21.239.199","port":80,"uuid":"c6ea407d-9f3f-4625-9dda-401837f0f68f","network":"ws","ws-opts":{"path":"/?ed=2048"}}
   - {"name":"中转节点-10.96MB/s","type":"ssr","server":"zx02.endhigh.xyz","port":6700,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB","group":"SSRProvider"}
   - {"name":"日本-2.84MB/s","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"dl.kgvn.garenanow.com"}}}
   - {"name":"日本-2.20MB/s","type":"ss","server":"52.194.252.137","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
@@ -105,23 +248,185 @@ proxies:
   - {"name":"美国-3.06MB/s","type":"vmess","server":"45.58.145.200","port":30000,"cipher":"auto","uuid":"55545f9e-a561-454a-8dc0-8bc110e6b1c9","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702301098557"}}
   - {"name":"荷兰-3.16MB/s","type":"vmess","server":"45.58.153.24","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702392255355"}}
   - {"name":"越南-1.61MB/s","type":"trojan","server":"103.166.185.11","port":443,"udp":true,"password":"mothai3456789080898","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
-  - {"name":"defaultName","type":"ss","server":"45.61.138.164","port":45662,"password":"TU0cVhGwelZTrXqcRgRblh","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-4.41MB/s","type":"ss","server":"57.180.13.136","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"中转节点-5.40MB/s","type":"ss","server":"nc.ct1.go002.xyz","port":19551,"password":"dcbc1c7f-c323-4365-bd48-cf767f9081ce","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"韩国-15.55MB/s","type":"trojan","server":"UNLK5.LVWF8N-HH8E-2300-NMOO-D2E9NAOBEACN.9D8F269F96B25232-759CBB36D6548597.KAUFEN","port":25002,"udp":true,"password":"92d3e5b6-6e8c-483b-a72b-000568d2e814","sni":"ip3691376078.mobgslb.tbcache.com","skip-cert-verify":true}
+  - {"name":"越南-4.35MB/s","type":"trojan","server":"103.197.184.93","port":443,"udp":true,"password":"baa85f59-844b-4aa6-95e6-1747d9b78e8a","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
+  - {"name":"中转节点-5.04MB/s","type":"vmess","server":"yes.cnmjcn.net","port":16626,"cipher":"auto","uuid":"c2c76420-257f-492a-b20f-6560f3bfa78d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com"}}}
+  - {"name":"泰国-439.1KB/s","type":"vmess","server":"103.114.201.143","port":59487,"cipher":"auto","uuid":"51fb562e-0a9b-4c27-e4d8-6f4883bb5165","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"加拿大-832.5KB/s","type":"ss","server":"38.91.107.37","port":4444,"password":"pKEW8JPByTVTLtM","cipher":"aes-256-gcm"}
+  - {"name":"加拿大-826.4KB/s","type":"ss","server":"38.91.107.37","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"加拿大-846.8KB/s","type":"ss","server":"38.91.107.37","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"俄罗斯联邦-2.20MB/s","type":"vmess","server":"46.29.166.237","port":47555,"cipher":"auto","uuid":"0c49cd19-2758-4d38-e6a8-11f2d6635860","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"defaultName_3","type":"ss","server":"45.61.138.164","port":45662,"password":"TU0cVhGwelZTrXqcRgRblh","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-668.8KB/s","type":"ssr","server":"zx02.endhigh.xyz","port":6702,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB","group":"SSRProvider"}
+  - {"name":"德国-3.89MB/s","type":"vmess","server":"217.160.45.31","port":8880,"cipher":"auto","uuid":"4e186678-fcca-4325-e4bc-b2916bdf6708","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"俄罗斯联邦-154.2KB/s","type":"ss","server":"is1.ssproxy.xyz","port":1443,"password":"OWJlYjYy","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"泰国-4.49MB/s","type":"vmess","server":"103.114.201.143","port":59487,"cipher":"auto","uuid":"51fb562e-0a9b-4c27-e4d8-6f4883bb5165","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-5.01MB/s","type":"vmess","server":"142.171.202.130","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702650992491"}}
+  - {"name":"越南-2.06MB/s","type":"trojan","server":"58.187.206.121","port":443,"udp":true,"password":"522NIIFovz","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
+  - {"name":"美国-413.2KB/s","type":"vmess","server":"172.233.188.217","port":55579,"cipher":"auto","uuid":"610f7b76-a4e2-4b5a-c458-96e69cbffb5e","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-512.0KB/s","type":"vmess","server":"18.216.249.151","port":46403,"cipher":"auto","uuid":"28dc6b61-09d8-4c19-b655-233cfb535567","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国-2.42MB/s","type":"vmess","server":"172.234.17.31","port":48771,"cipher":"auto","uuid":"f1c2be64-961b-407a-c4e0-b8919ca1253b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"中转节点-4.29MB/s","type":"vmess","server":"cm1.awslcn.info","port":25230,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm1.awslcn.info"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -132,23 +437,185 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -159,23 +626,185 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -186,22 +815,184 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -212,22 +1003,184 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -238,22 +1191,184 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -264,7 +1379,27 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -287,16 +1422,158 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本-4.41MB/s
-      - 中转节点-5.40MB/s
-      - 韩国-15.55MB/s
-      - 越南-4.35MB/s
-      - 中转节点-5.04MB/s
-      - 泰国-439.1KB/s
-      - 加拿大-832.5KB/s
-      - 加拿大-826.4KB/s
-      - 加拿大-846.8KB/s
-      - 俄罗斯联邦-2.20MB/s
+      - 🇲🇴澳门
+      - aka
+      - 🇭🇰香港
+      - 香港[高速试用]
+      - defaultName_1
+      - TG:@jiedianh 每天更新+(12)
+      - 每天更新TG：@jiedianh
+      - TG每日更新 @jiedianh
+      - 🇳🇱_NL_荷兰
+      - TG每天更新@jiedianh_1
+      - 香港_R_988
+      - 香港_R_1103
+      - 香港_R_1154
+      - 香港_R_911
+      - 香港_R_863
+      - 台湾_R_1209
+      - 台湾_R_821
+      - 台湾_R_1170
+      - 台湾_R_1040
+      - 泰国_R_1013
+      - 印度_R_868
+      - 澳大利亚_R_816
+      - 越南_R_837
+      - 马来西亚_R_1142
+      - 爱沙尼亚_R_905
+      - 南非_R_1034
+      - 加拿大_R_890
+      - 阿塞拜疆_R_899
+      - 日本_R_1048
+      - 日本_R_1129
+      - 瑞士_R_1018
+      - 菲律宾_R_811
+      - 柬埔寨_R_992
+      - 阿联酋_R_977
+      - 新加坡_R_806
+      - 新加坡_R_826
+      - 新加坡_R_1116
+      - 韩国_R_873
+      - 韩国_R_1180
+      - 韩国_R_877
+      - 韩国_R_878
+      - 美国_R_884
+      - 美国_R_780
+      - 美国_R_1108
+      - 美国_R_1159
+      - 英国_R_1111
+      - 英国_R_1162
+      - 俄罗斯_R_982
+      - 尼日利亚_R_921
+      - 土耳其_R_841
+      - 冰岛_R_932
+      - 匈牙利_R_972
+      - 保加利亚_R_937
+      - 西班牙_R_942
+      - 乌克兰_R_947
+      - 以色列_R_952
+      - 荷兰_R_794
+      - 阿根廷_R_894
+      - 巴西_R_1029
+      - 印度尼西亚_R_962
+      - 肯尼亚_R_1050
+      - 意大利_R_967
+      - HK@jiedianh
+      - 洛杉矶@jiedianh
+      - 美国@jiedianh
+      - 首尔-163net-500M-电信/移动/联通
+      - 东京-NTT-500M-移动/联通
+      - 狮城-Cogent-500M-移动/联通
+      - 美国-Vultr-1000M-Global
+      - 瑞典-Vultr-1000M-Global
+      - defaultName_2
+      - TG每天更新@jiedianh_2
+      - 俄罗斯B
+      - 俄罗斯A
+      - 俄罗斯C
+      - 俄罗斯D
+      - 俄罗斯E
+      - 俄罗斯F
+      - 俄罗斯G
+      - 俄罗斯H
+      - 俄罗斯I
+      - 俄罗斯J
+      - 俄罗斯K
+      - 俄罗斯L
+      - rn@jiediannh1
+      - 中转节点-3.35MB/s
+      - 美国-289.8KB/s
+      - 香港-1.52MB/s
+      - 加拿大-3.50MB/s
+      - 日本-3.76MB/s
+      - 加拿大-3.35MB/s
+      - 加拿大-3.42MB/s
+      - 加拿大-3.64MB/s
+      - 越南-2.01MB/s
+      - 越南-853.5KB/s
+      - 美国🇺🇸cf@jiediannh1
+      - cfvless节点@jiediannh1
+      - 新加坡(2024-01-01)@jiediannh1
+      - Melbikomas+UAB+🇳🇬+尼日利亚@jiediannh1
+      - Akamai+🇸🇬+新加坡@jiediannh1
+      - G-Core+Labs+🇭🇰香港@jiediannh1
+      - TG每天更新@jiedianh_3
+      - 瑞典-Vultr-1000M-Global@jiediannh1
+      - 美国-Vultr-1000M-Global@jiediannh1
+      - 🇺🇸US_191 @jiediannh1
+      - 🇺🇸US_210 @jiediannh1
+      - 🇺🇸US_052 @jiediannh1
+      - 中转节点-9.87MB/s
+      - 越南-222.9KB/s
+      - 中转节点-22.59MB/s
+      - 台湾-499.2KB/s
+      - 日本-8.72MB/s
+      - 中转节点-1.29MB/s
+      - 韩国-5.88MB/s
+      - 越南-2.51MB/s
+      - 越南-1.42MB/s
+      - 美国-4.83MB/s
+      - TG每天更新@jiedianh1
+      - 中转节点-1.77MB/s
+      - 中转节点-5.95MB/s
+      - 韩国-13.45MB/s
+      - 中转节点-1.38MB/s
+      - 中转节点-4.27MB/s
+      - 日本-122.4KB/s
+      - 日本-3.87MB/s
+      - 越南-2.88MB/s
+      - 美国-170.0KB/s
+      - 香港-4.26MB/s
+      - 越南-1.98MB/s
+      - 英国-3.83MB/s
+      - 荷兰-3.58MB/s
+      - 美国-1.40MB/s
+      - 德国-3.00MB/s
+      - 未知国家-5.29MB/s
+      - 未知国家-153.9KB/s
+      - 加拿大-617.1KB/s
+      - 未知国家-3.48MB/s
+      - 未知国家-6.03MB/s
+      - 英国-2.47MB/s
+      - 立陶宛-225.2KB/s
+      - 荷兰-3.83MB/s
+      - 中转节点-2.67MB/s
+      - 中转节点-4.36MB/s
+      - 中转节点-3.22MB/s
+      - 英国-4.94MB/s
+      - 香港-4.91MB/s
+      - 越南-247.6KB/s
+      - 菲律宾-522.0KB/s
+      - 🇺🇸US_181 @jiediannh1
+      - 🇺🇸US_058 @jiediannh1
+      - 🇬🇧@jiedianh1
+      - 🇺🇸US_199 @jiediannh1
       - 中转节点-10.96MB/s
       - 日本-2.84MB/s
       - 日本-2.20MB/s
@@ -307,7 +1584,27 @@ proxy-groups:
       - 美国-3.06MB/s
       - 荷兰-3.16MB/s
       - 越南-1.61MB/s
-      - defaultName
+      - 日本-4.41MB/s
+      - 中转节点-5.40MB/s
+      - 韩国-15.55MB/s
+      - 越南-4.35MB/s
+      - 中转节点-5.04MB/s
+      - 泰国-439.1KB/s
+      - 加拿大-832.5KB/s
+      - 加拿大-826.4KB/s
+      - 加拿大-846.8KB/s
+      - 俄罗斯联邦-2.20MB/s
+      - defaultName_3
+      - 中转节点-668.8KB/s
+      - 德国-3.89MB/s
+      - 俄罗斯联邦-154.2KB/s
+      - 泰国-4.49MB/s
+      - 美国-5.01MB/s
+      - 越南-2.06MB/s
+      - 美国-413.2KB/s
+      - 美国-512.0KB/s
+      - 美国-2.42MB/s
+      - 中转节点-4.29MB/s
 
 rules:
 # 本地/局域网地址
