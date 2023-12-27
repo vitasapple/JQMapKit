@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-12-27 12:59:42
+# 客户端：Clash
+# 创建时间：2023-12-27 13:01:06
 # 使用模版：V2RaySE 默认模版
-# 节点数量：32
+# 节点数量：31
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -86,7 +85,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"德国174","type":"vless","server":"de.msv2ray.sbs","port":443,"uuid":"--MsV2ray--MsV2ray--MsV2ray--","tls":true,"servername":"ws.MsV2ray.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"ws.MsV2ray.sbs"}}}
   - {"name":"英国-2.47MB/s","type":"ss","server":"52.142.161.9","port":34424,"password":"64LbKHnB3IO759ueEnhgMG","cipher":"chacha20-ietf-poly1305"}
   - {"name":"立陶宛-225.2KB/s","type":"ss","server":"tvc.sabz.top","port":15171,"password":"rct9lNBCpv79OOcJmjIZ0mHxGSWnn0DXmMPgtBeQqztu","cipher":"aes-128-gcm"}
   - {"name":"荷兰-3.83MB/s","type":"ss","server":"45.87.153.246","port":6199,"password":"f7EI0dGWQM42T8gwN9CZIj","cipher":"chacha20-ietf-poly1305"}
@@ -124,7 +122,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
@@ -162,7 +159,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
@@ -200,7 +196,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
@@ -237,7 +232,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
@@ -274,7 +268,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
@@ -311,7 +304,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
@@ -365,7 +357,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国174
       - 英国-2.47MB/s
       - 立陶宛-225.2KB/s
       - 荷兰-3.83MB/s
