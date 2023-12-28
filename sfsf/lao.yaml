@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-28 09:02:33
+# 创建时间：2023-12-28 09:03:58
 # 使用模版：V2RaySE 默认模版
-# 节点数量：24
+# 节点数量：19
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -104,11 +104,6 @@ proxies:
   - {"name":"日本-259.6KB/s","type":"ss","server":"54.95.21.57","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"德国-260.5KB/s","type":"vmess","server":"217.160.45.31","port":8880,"cipher":"auto","uuid":"4e186678-fcca-4325-e4bc-b2916bdf6708","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"日本-194.0KB/s","type":"vmess","server":"jp.takeshi.wiki","port":80,"cipher":"auto","uuid":"59517e0b-ae1c-41d3-9c44-c44cea6f7546","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"internet.life.com.by"}}}
-  - {"name":"未知国家-178.0KB/s","type":"vmess","server":"104.26.8.44","port":80,"cipher":"auto","uuid":"5180444a-4756-43b4-960b-49eb9052e4e8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"未知国家-643.0KB/s","type":"vmess","server":"wnd2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"wnd2.shabijichang.com"}}}
-  - {"name":"美国-2.07MB/s","type":"vmess","server":"ld2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ld2.shabijichang.com"}}}
-  - {"name":"美国-1.44MB/s","type":"vmess","server":"172.67.184.13","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"美国-540.6KB/s","type":"vmess","server":"ml2.shabijichang.com","port":80,"cipher":"auto","uuid":"10ea3b2a-b615-45f1-b1b7-c62bafe8c80c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ml2.shabijichang.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -134,11 +129,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -164,11 +154,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -194,11 +179,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
   - name: 📲 电报信息
     type: select
     proxies:
@@ -223,11 +203,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -252,11 +227,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -281,11 +251,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -327,11 +292,6 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - 未知国家-178.0KB/s
-      - 未知国家-643.0KB/s
-      - 美国-2.07MB/s
-      - 美国-1.44MB/s
-      - 美国-540.6KB/s
 
 rules:
 # 本地/局域网地址
