@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-12-28 11:38:30
+# 客户端：Clash.Meta
+# 创建时间：2023-12-28 14:24:35
 # 使用模版：V2RaySE 默认模版
-# 节点数量：20
+# 节点数量：21
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -105,6 +106,7 @@ proxies:
   - {"name":"德国-260.5KB/s","type":"vmess","server":"217.160.45.31","port":8880,"cipher":"auto","uuid":"4e186678-fcca-4325-e4bc-b2916bdf6708","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"日本-194.0KB/s","type":"vmess","server":"jp.takeshi.wiki","port":80,"cipher":"auto","uuid":"59517e0b-ae1c-41d3-9c44-c44cea6f7546","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"internet.life.com.by"}}}
   - {"name":"defaultName","type":"ss","server":"195.85.115.125","port":55264,"password":"Eo5RGm0w5E8mS9IRtFdi1E","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"香港🇭🇰@jiediannh1","type":"vless","server":"194.104.146.231","port":443,"udp":true,"uuid":"d2748615-7860-4d73-a784-e8ed8a7c4422","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -131,6 +133,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -157,6 +160,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -183,6 +187,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
   - name: 📲 电报信息
     type: select
     proxies:
@@ -208,6 +213,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -233,6 +239,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -258,6 +265,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -300,6 +308,7 @@ proxy-groups:
       - 德国-260.5KB/s
       - 日本-194.0KB/s
       - defaultName
+      - 香港🇭🇰@jiediannh1
 
 rules:
 # 本地/局域网地址
