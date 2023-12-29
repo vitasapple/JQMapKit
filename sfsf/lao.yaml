@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-28 15:11:31
+# 创建时间：2023-12-29 13:07:04
 # 使用模版：V2RaySE 默认模版
-# 节点数量：22
+# 节点数量：34
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -104,9 +104,21 @@ proxies:
   - {"name":"日本-259.6KB/s","type":"ss","server":"54.95.21.57","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"德国-260.5KB/s","type":"vmess","server":"217.160.45.31","port":8880,"cipher":"auto","uuid":"4e186678-fcca-4325-e4bc-b2916bdf6708","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"日本-194.0KB/s","type":"vmess","server":"jp.takeshi.wiki","port":80,"cipher":"auto","uuid":"59517e0b-ae1c-41d3-9c44-c44cea6f7546","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"internet.life.com.by"}}}
-  - {"name":"defaultName","type":"ss","server":"195.85.115.125","port":55264,"password":"Eo5RGm0w5E8mS9IRtFdi1E","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"Akamai 🇯🇵日本","type":"ss","server":"yd.qianggewangluo.buzz","port":10809,"password":"d7953d64-d33c-44ca-bede-3fc6ffbc8904","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"Akamai 🇦🇺澳大利亚 ","type":"ss","server":"yd.qianggewangluo.buzz","port":10813,"password":"d7953d64-d33c-44ca-bede-3fc6ffbc8904","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_1","type":"ss","server":"195.85.115.125","port":55264,"password":"Eo5RGm0w5E8mS9IRtFdi1E","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"04f5f102-eb46-49a0-815f-07154c5e54e9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"TG每天更新@jiediannh1","type":"trojan","server":"frontend.kuangbiaoyun.com","port":40003,"udp":true,"password":"53336e19-76e1-47bf-b10b-09c31cb90e17","skip-cert-verify":true}
+  - {"name":"defaultName_2","type":"ss","server":"149.248.76.20","port":51788,"password":"LkUu9bcjn5Q7N7ezXwxHxx","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国-2.38MB/s","type":"ss","server":"45.58.39.13","port":58428,"password":"31LdYhP8Ae","cipher":"aes-256-gcm"}
+  - {"name":"奥地利-169.9KB/s","type":"ss","server":"5.181.21.19","port":8388,"password":"Njk2Nzcy","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"英国-3.06MB/s","type":"trojan","server":"213.219.37.208","port":443,"udp":true,"password":"a135b73e-5d11-4f0e-9180-c28ef28b665b","skip-cert-verify":true}
+  - {"name":"英国-3.96MB/s","type":"ss","server":"51.141.100.85","port":28521,"password":"NK4KTpH4GbWznkJywV7VmA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-5.38MB/s","type":"ss","server":"120.232.234.221","port":19511,"password":"dcbc1c7f-c323-4365-bd48-cf767f9081ce","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"韩国-320.7KB/s","type":"ss","server":"43.201.55.242","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"日本-1.34MB/s","type":"ss","server":"54.64.134.112","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"韩国-3.70MB/s","type":"ss","server":"43.201.253.32","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"香港-609.9KB/s","type":"ss","server":"1.65.139.54","port":443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
+  - {"name":"南非-2.37MB/s","type":"ss","server":"129.232.129.156","port":444,"password":"DiPietyory","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"SRIYAAN 🇺🇸 CDN","type":"vmess","server":"whatismyipaddress.com","port":2052,"cipher":"auto","uuid":"bf3d038a-93a2-4e24-886c-6bc64e3c3a90","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mgtow_cdn.yunjisuan.cf"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -132,9 +144,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -160,9 +184,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -188,9 +224,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
   - name: 📲 电报信息
     type: select
     proxies:
@@ -215,9 +263,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -242,9 +302,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -269,9 +341,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -313,9 +397,21 @@ proxy-groups:
       - 日本-259.6KB/s
       - 德国-260.5KB/s
       - 日本-194.0KB/s
-      - defaultName
-      - Akamai 🇯🇵日本
-      - 'Akamai 🇦🇺澳大利亚 '
+      - defaultName_1
+      - 美国
+      - TG每天更新@jiediannh1
+      - defaultName_2
+      - 美国-2.38MB/s
+      - 奥地利-169.9KB/s
+      - 英国-3.06MB/s
+      - 英国-3.96MB/s
+      - 中转节点-5.38MB/s
+      - 韩国-320.7KB/s
+      - 日本-1.34MB/s
+      - 韩国-3.70MB/s
+      - 香港-609.9KB/s
+      - 南非-2.37MB/s
+      - SRIYAAN 🇺🇸 CDN
 
 rules:
 # 本地/局域网地址
