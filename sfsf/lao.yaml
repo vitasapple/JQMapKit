@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-30 11:07:02
+# 创建时间：2023-12-30 22:58:27
 # 使用模版：V2RaySE 默认模版
-# 节点数量：14
+# 节点数量：24
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -99,6 +99,16 @@ proxies:
   - {"name":"南非-2.37MB/s_2","type":"ss","server":"129.232.129.156","port":444,"password":"DiPietyory","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"149.248.76.20","port":51788,"password":"LkUu9bcjn5Q7N7ezXwxHxx","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_3","type":"ss","server":"149.248.76.20","port":51788,"password":"LkUu9bcjn5Q7N7ezXwxHxx","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转节点-1.62MB/s","type":"ssr","server":"cm03.newcome.xyz","port":6705,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"5d3ee46961.microsoft.com","protocol-param":"46961:1210-Tha","group":"SSRProvider"}
+  - {"name":"荷兰-2.55MB/s","type":"vmess","server":"45.58.153.24","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702392255355"}}
+  - {"name":"韩国-274.8KB/s","type":"ss","server":"43.201.53.4","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"芬兰-133.5KB/s","type":"ss","server":"45.159.249.231","port":38584,"password":"zIPjynKNVVaBnKK0UZ5zu2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本-113.8KB/s","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"荷兰-3.06MB/s","type":"vmess","server":"45.58.153.25","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702961716738"}}
+  - {"name":"加拿大-3.21MB/s","type":"trojan","server":"frontend.kuangbiaoyun.com","port":40005,"udp":true,"password":"ad953998-e8ea-4d5b-8b2f-e63edd9d375d","skip-cert-verify":true}
+  - {"name":"瑞典-113.6KB/s","type":"trojan","server":"172.234.99.161","port":443,"udp":true,"password":"5f610684-118f-46cf-aa34-9951475b75ad","skip-cert-verify":true}
+  - {"name":"越南-401.0KB/s","type":"trojan","server":"vip.zinok.pro","port":443,"udp":true,"password":"mothai3456789080898","skip-cert-verify":true}
+  - {"name":"越南-978.6KB/s","type":"trojan","server":"ANTIDDOS88.5GTOCDOCAO.COM","port":443,"udp":true,"password":"7a2c5296-683d-48db-9856-373cafac48b5","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -119,6 +129,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,6 +159,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -159,6 +189,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
   - name: 📲 电报信息
     type: select
     proxies:
@@ -178,6 +218,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -197,6 +247,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -216,6 +276,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -252,6 +322,16 @@ proxy-groups:
       - 南非-2.37MB/s_2
       - defaultName_2
       - defaultName_3
+      - 中转节点-1.62MB/s
+      - 荷兰-2.55MB/s
+      - 韩国-274.8KB/s
+      - 芬兰-133.5KB/s
+      - 日本-113.8KB/s
+      - 荷兰-3.06MB/s
+      - 加拿大-3.21MB/s
+      - 瑞典-113.6KB/s
+      - 越南-401.0KB/s
+      - 越南-978.6KB/s
 
 rules:
 # 本地/局域网地址
