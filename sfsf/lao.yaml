@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-29 16:29:54
+# 创建时间：2023-12-30 11:07:02
 # 使用模版：V2RaySE 默认模版
-# 节点数量：25
+# 节点数量：14
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -88,28 +88,17 @@ proxies:
   - {"name":"越南-247.6KB/s","type":"trojan","server":"58.187.206.121","port":443,"udp":true,"password":"522NIIFovz","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
   - {"name":"中转节点-6.73MB/s","type":"ssr","server":"cm03.newcome.xyz","port":6705,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"5d3ee46961.microsoft.com","protocol-param":"46961:1210-Tha","group":"SSRProvider"}
   - {"name":"印度-3.01MB/s","type":"trojan","server":"103.82.133.201","port":443,"udp":true,"password":"bfb9f927-eef3-4dfd-adbe-05bcc8279b41","sni":"dl.kgvn.garenanow.com","skip-cert-verify":true}
-  - {"name":"中转节点-291.5KB/s","type":"ss","server":"service.ouluyun9803.com","port":26666,"password":"057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中转节点-248.1KB/s","type":"ss","server":"service.ouluyun9803.com","port":21003,"password":"057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6","cipher":"chacha20-ietf-poly1305"}
   - {"name":"日本-259.6KB/s","type":"ss","server":"54.95.21.57","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"defaultName","type":"ss","server":"195.85.115.125","port":55264,"password":"Eo5RGm0w5E8mS9IRtFdi1E","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_1","type":"ss","server":"195.85.115.125","port":55264,"password":"Eo5RGm0w5E8mS9IRtFdi1E","cipher":"chacha20-ietf-poly1305"}
   - {"name":"奥地利-169.9KB/s_1","type":"ss","server":"5.181.21.19","port":8388,"password":"Njk2Nzcy","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"英国-3.06MB/s_1","type":"trojan","server":"213.219.37.208","port":443,"udp":true,"password":"a135b73e-5d11-4f0e-9180-c28ef28b665b","skip-cert-verify":true}
   - {"name":"日本-1.34MB/s_1","type":"ss","server":"54.64.134.112","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国-3.70MB/s_1","type":"ss","server":"43.201.253.32","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"香港-609.9KB/s_1","type":"ss","server":"1.65.139.54","port":443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
   - {"name":"南非-2.37MB/s_1","type":"ss","server":"129.232.129.156","port":444,"password":"DiPietyory","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"SRIYAAN 🇺🇸 CDN_1","type":"vmess","server":"whatismyipaddress.com","port":2052,"cipher":"auto","uuid":"bf3d038a-93a2-4e24-886c-6bc64e3c3a90","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mgtow_cdn.yunjisuan.cf"}}}
-  - {"name":"SRIYAAN 🇺🇸 CDN_2","type":"vmess","server":"whatismyipaddress.com","port":2052,"cipher":"auto","uuid":"bf3d038a-93a2-4e24-886c-6bc64e3c3a90","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"mgtow_cdn.yunjisuan.cf"}}}
-  - {"name":"美国-2.38MB/s","type":"ss","server":"45.58.39.13","port":58428,"password":"31LdYhP8Ae","cipher":"aes-256-gcm"}
   - {"name":"奥地利-169.9KB/s_2","type":"ss","server":"5.181.21.19","port":8388,"password":"Njk2Nzcy","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"英国-3.06MB/s_2","type":"trojan","server":"213.219.37.208","port":443,"udp":true,"password":"a135b73e-5d11-4f0e-9180-c28ef28b665b","skip-cert-verify":true}
   - {"name":"英国-3.96MB/s","type":"ss","server":"51.141.100.85","port":28521,"password":"NK4KTpH4GbWznkJywV7VmA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"中转节点-5.38MB/s","type":"ss","server":"120.232.234.221","port":19511,"password":"dcbc1c7f-c323-4365-bd48-cf767f9081ce","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"韩国-320.7KB/s","type":"ss","server":"43.201.55.242","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"日本-1.34MB/s_2","type":"ss","server":"54.64.134.112","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"韩国-3.70MB/s_2","type":"ss","server":"43.201.253.32","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"香港-609.9KB/s_2","type":"ss","server":"1.65.139.54","port":443,"password":"a-wym4ovY4Yw","cipher":"aes-128-gcm","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":false}}
   - {"name":"南非-2.37MB/s_2","type":"ss","server":"129.232.129.156","port":444,"password":"DiPietyory","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_2","type":"ss","server":"149.248.76.20","port":51788,"password":"LkUu9bcjn5Q7N7ezXwxHxx","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_3","type":"ss","server":"149.248.76.20","port":51788,"password":"LkUu9bcjn5Q7N7ezXwxHxx","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -119,28 +108,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -150,28 +128,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -181,28 +148,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -211,28 +167,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -241,28 +186,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -271,28 +205,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -318,28 +241,17 @@ proxy-groups:
       - 越南-247.6KB/s
       - 中转节点-6.73MB/s
       - 印度-3.01MB/s
-      - 中转节点-291.5KB/s
-      - 中转节点-248.1KB/s
       - 日本-259.6KB/s
-      - defaultName
+      - defaultName_1
       - 奥地利-169.9KB/s_1
-      - 英国-3.06MB/s_1
       - 日本-1.34MB/s_1
-      - 韩国-3.70MB/s_1
-      - 香港-609.9KB/s_1
       - 南非-2.37MB/s_1
-      - SRIYAAN 🇺🇸 CDN_1
-      - SRIYAAN 🇺🇸 CDN_2
-      - 美国-2.38MB/s
       - 奥地利-169.9KB/s_2
-      - 英国-3.06MB/s_2
       - 英国-3.96MB/s
-      - 中转节点-5.38MB/s
-      - 韩国-320.7KB/s
       - 日本-1.34MB/s_2
-      - 韩国-3.70MB/s_2
-      - 香港-609.9KB/s_2
       - 南非-2.37MB/s_2
+      - defaultName_2
+      - defaultName_3
 
 rules:
 # 本地/局域网地址
