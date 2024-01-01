@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-01-01 12:34:13
+# 客户端：Clash.Meta
+# 创建时间：2024-01-01 12:35:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：16
+# 节点数量：25
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -101,6 +102,15 @@ proxies:
   - {"name":"日本-113.8KB/s","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"dl.kgvn.garenanow.com"}}}
   - {"name":"荷兰-3.06MB/s","type":"vmess","server":"45.58.153.25","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702961716738"}}
   - {"name":"瑞典-113.6KB/s","type":"trojan","server":"172.234.99.161","port":443,"udp":true,"password":"5f610684-118f-46cf-aa34-9951475b75ad","skip-cert-verify":true}
+  - {"name":"HVC+90+ID(@Outline_Vpn)+🔱","type":"vless","server":"104.21.28.62","port":443,"uuid":"b9ad895b-12ac-40fc-a5ac-a5b2a1285001","tls":true,"servername":"3k.pureboy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.pureboy.eu.org"}},"client-fingerprint":"chrome"}
+  - {"name":"HVC+91+ID(@Outline_Vpn)+🔱","type":"vless","server":"172.67.170.103","port":443,"uuid":"b9ad895b-12ac-40fc-a5ac-a5b2a1285001","tls":true,"servername":"3k.pureboy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.pureboy.eu.org"}},"client-fingerprint":"chrome"}
+  - {"name":"HVC+92+ID(@Outline_Vpn)+🔱","type":"vless","server":"edgu.pureboy.eu.org","port":443,"uuid":"04a93bb8-0a5b-4aa8-ab7f-31fc7adab1c1","tls":true,"servername":"edgu.pureboy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"edgu.pureboy.eu.org"}},"client-fingerprint":"chrome"}
+  - {"name":"HVC+93+ID(@Outline_Vpn)+🔱","type":"vless","server":"3k.pureboy.eu.org","port":443,"uuid":"b9ad895b-12ac-40fc-a5ac-a5b2a1285001","tls":true,"servername":"3k.pureboy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.pureboy.eu.org"}},"alpn":["http/1.1"],"client-fingerprint":"chrome"}
+  - {"name":"HVC+94+ID(@Outline_Vpn)+🔱","type":"vless","server":"104.16.29.8","port":8080,"uuid":"a57f3fbc-221a-4f9b-89b6-7757c23e328b","tls":false,"servername":"media.khamenei.bio","network":"ws","ws-opts":{"path":"/backup","headers":{"host":"media.khamenei.bio"}}}
+  - {"name":"HVC+95+ID(@Outline_Vpn)+🔱","type":"vless","server":"104.24.255.191","port":2052,"uuid":"a4c42483-3b0c-4ddb-b766-46592be075b6","tls":false,"servername":"RJNB46.amOoZeshgAH-pc.COM","network":"ws","ws-opts":{"path":"/","headers":{"host":"RJNB46.amOoZeshgAH-pc.COM"}}}
+  - {"name":"HVC+96+ID(@Outline_Vpn)+🔱","type":"vless","server":"104.31.16.242","port":443,"uuid":"6c380b0b-4b4a-48ac-9da6-5fc846442526","tls":true,"servername":"bolbolvpn-join-us-8.rising-from-ashes.sbs","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bolbolvpn-join-us-8.rising-from-ashes.sbs"}},"client-fingerprint":"chrome"}
+  - {"name":"HVC+97+ID(@Outline_Vpn)+🔱","type":"vless","server":"www.unpkg.com","port":443,"uuid":"b9ad895b-12ac-40fc-a5ac-a5b2a1285001","tls":true,"servername":"3k.pureboy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"3k.pureboy.eu.org"}}}
+  - {"name":"HVC+98+ID(@Outline_Vpn)+🔱","type":"vless","server":"suratquran18.xyz","port":443,"uuid":"962a733d-2614-0b9b-7ffe-9ac92ffea8eb","tls":true,"network":"ws","ws-opts":{"path":"/current_time"},"client-fingerprint":"safari"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -123,6 +133,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -145,6 +164,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -167,6 +195,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
   - name: 📲 电报信息
     type: select
     proxies:
@@ -188,6 +225,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -209,6 +255,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -230,6 +285,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -268,6 +332,15 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - HVC+90+ID(@Outline_Vpn)+🔱
+      - HVC+91+ID(@Outline_Vpn)+🔱
+      - HVC+92+ID(@Outline_Vpn)+🔱
+      - HVC+93+ID(@Outline_Vpn)+🔱
+      - HVC+94+ID(@Outline_Vpn)+🔱
+      - HVC+95+ID(@Outline_Vpn)+🔱
+      - HVC+96+ID(@Outline_Vpn)+🔱
+      - HVC+97+ID(@Outline_Vpn)+🔱
+      - HVC+98+ID(@Outline_Vpn)+🔱
 
 rules:
 # 本地/局域网地址
