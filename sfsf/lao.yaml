@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-01-01 12:36:12
+# 客户端：Clash
+# 创建时间：2024-01-02 23:41:18
 # 使用模版：V2RaySE 默认模版
-# 节点数量：41
+# 节点数量：20
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -102,31 +101,10 @@ proxies:
   - {"name":"日本-113.8KB/s","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"dl.kgvn.garenanow.com"}}}
   - {"name":"荷兰-3.06MB/s","type":"vmess","server":"45.58.153.25","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702961716738"}}
   - {"name":"瑞典-113.6KB/s","type":"trojan","server":"172.234.99.161","port":443,"udp":true,"password":"5f610684-118f-46cf-aa34-9951475b75ad","skip-cert-verify":true}
-  - {"name":"🇯🇵JP_6081 @WangCai_8_1","type":"vless","server":"fdjp2.xcdh.free.hr","port":443,"uuid":"60813b9d-aa0e-4a5c-88b8-ed231058e82a","tls":true,"servername":"pages.20230619.love","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"pages.20230619.love"}}}
-  - {"name":"🇯🇵JP_6081 @WangCai_8_2","type":"vless","server":"fdjp2.xcdh.free.hr","port":2053,"uuid":"60813b9d-aa0e-4a5c-88b8-ed231058e82a","tls":true,"servername":"pages.20230619.love","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"pages.20230619.love"}}}
-  - {"name":"🇯🇵JP_6081 @WangCai_8_3","type":"vless","server":"fdjp2.xcdh.free.hr","port":2083,"uuid":"60813b9d-aa0e-4a5c-88b8-ed231058e82a","tls":true,"servername":"pages.20230619.love","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"pages.20230619.love"}}}
-  - {"name":"🇯🇵JP_6081 @WangCai_8_4","type":"vless","server":"fdjp2.xcdh.free.hr","port":2087,"uuid":"60813b9d-aa0e-4a5c-88b8-ed231058e82a","tls":true,"servername":"pages.20230619.love","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"pages.20230619.love"}}}
-  - {"name":"🇯🇵JP_6081 @WangCai_8_5","type":"vless","server":"fdjp2.xcdh.free.hr","port":2096,"uuid":"60813b9d-aa0e-4a5c-88b8-ed231058e82a","tls":true,"servername":"pages.20230619.love","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"pages.20230619.love"}}}
-  - {"name":"🇯🇵JP_6081 @WangCai_8_6","type":"vless","server":"fdjp2.xcdh.free.hr","port":8443,"uuid":"60813b9d-aa0e-4a5c-88b8-ed231058e82a","tls":true,"servername":"pages.20230619.love","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"pages.20230619.love"}}}
-  - {"name":"🇯🇵JP_ffff @WangCai_8_1","type":"vless","server":"fdjp2.xcdh.free.hr","port":443,"uuid":"ffffffff-17ad-45e7-aaa1-f2baaa08e930","tls":true,"servername":"watashi.free.jppublic.moh539.link","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"watashi.free.jppublic.moh539.link"}}}
-  - {"name":"🇯🇵JP_ffff @WangCai_8_2","type":"vless","server":"fdjp2.xcdh.free.hr","port":2053,"uuid":"ffffffff-17ad-45e7-aaa1-f2baaa08e930","tls":true,"servername":"watashi.free.jppublic.moh539.link","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"watashi.free.jppublic.moh539.link"}}}
-  - {"name":"🇯🇵JP_ffff @WangCai_8_3","type":"vless","server":"fdjp2.xcdh.free.hr","port":2083,"uuid":"ffffffff-17ad-45e7-aaa1-f2baaa08e930","tls":true,"servername":"watashi.free.jppublic.moh539.link","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"watashi.free.jppublic.moh539.link"}}}
-  - {"name":"🇯🇵JP_ffff @WangCai_8_4","type":"vless","server":"fdjp2.xcdh.free.hr","port":2087,"uuid":"ffffffff-17ad-45e7-aaa1-f2baaa08e930","tls":true,"servername":"watashi.free.jppublic.moh539.link","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"watashi.free.jppublic.moh539.link"}}}
-  - {"name":"🇯🇵JP_ffff @WangCai_8_5","type":"vless","server":"fdjp2.xcdh.free.hr","port":2096,"uuid":"ffffffff-17ad-45e7-aaa1-f2baaa08e930","tls":true,"servername":"watashi.free.jppublic.moh539.link","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"watashi.free.jppublic.moh539.link"}}}
-  - {"name":"🇯🇵JP_ffff @WangCai_8_6","type":"vless","server":"fdjp2.xcdh.free.hr","port":8443,"uuid":"ffffffff-17ad-45e7-aaa1-f2baaa08e930","tls":true,"servername":"watashi.free.jppublic.moh539.link","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"watashi.free.jppublic.moh539.link"}}}
-  - {"name":"🇯🇵JP_7fd7 @WangCai_8_1","type":"vless","server":"fdjp2.xcdh.free.hr","port":443,"uuid":"7fd7c15d-95cd-4f5c-bf59-f21e5eb27580","tls":true,"servername":"3k.dabee.top","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"3k.dabee.top"}}}
-  - {"name":"🇯🇵JP_7fd7 @WangCai_8_2","type":"vless","server":"fdjp2.xcdh.free.hr","port":2053,"uuid":"7fd7c15d-95cd-4f5c-bf59-f21e5eb27580","tls":true,"servername":"3k.dabee.top","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"3k.dabee.top"}}}
-  - {"name":"🇯🇵JP_7fd7 @WangCai_8_3","type":"vless","server":"fdjp2.xcdh.free.hr","port":2083,"uuid":"7fd7c15d-95cd-4f5c-bf59-f21e5eb27580","tls":true,"servername":"3k.dabee.top","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"3k.dabee.top"}}}
-  - {"name":"🇯🇵JP_7fd7 @WangCai_8_4","type":"vless","server":"fdjp2.xcdh.free.hr","port":2087,"uuid":"7fd7c15d-95cd-4f5c-bf59-f21e5eb27580","tls":true,"servername":"3k.dabee.top","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"3k.dabee.top"}}}
-  - {"name":"🇯🇵JP_7fd7 @WangCai_8_5","type":"vless","server":"fdjp2.xcdh.free.hr","port":2096,"uuid":"7fd7c15d-95cd-4f5c-bf59-f21e5eb27580","tls":true,"servername":"3k.dabee.top","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"3k.dabee.top"}}}
-  - {"name":"🇯🇵JP_7fd7 @WangCai_8_6","type":"vless","server":"fdjp2.xcdh.free.hr","port":8443,"uuid":"7fd7c15d-95cd-4f5c-bf59-f21e5eb27580","tls":true,"servername":"3k.dabee.top","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"3k.dabee.top"}}}
-  - {"name":"🇯🇵JP_cd20 @WangCai_8","type":"vless","server":"fdjp2.xcdh.free.hr","port":443,"uuid":"cd20a82c-8cc8-48bb-8866-0a2c6338a390","tls":true,"servername":"1671034988.behmusic.store","network":"grpc","grpc-opts":{"grpc-service-name":"26655234"}}
-  - {"name":"🇯🇵JP_73b6 @WangCai_8_1","type":"vless","server":"fdjp2.xcdh.free.hr","port":443,"uuid":"73b6dbd5-a27a-4c76-9ad1-42a82380dddb","tls":true,"servername":"ed.ariesver.online","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"ed.ariesver.online"}}}
-  - {"name":"🇯🇵JP_73b6 @WangCai_8_2","type":"vless","server":"fdjp2.xcdh.free.hr","port":2053,"uuid":"73b6dbd5-a27a-4c76-9ad1-42a82380dddb","tls":true,"servername":"ed.ariesver.online","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"ed.ariesver.online"}}}
-  - {"name":"🇯🇵JP_73b6 @WangCai_8_3","type":"vless","server":"fdjp2.xcdh.free.hr","port":2083,"uuid":"73b6dbd5-a27a-4c76-9ad1-42a82380dddb","tls":true,"servername":"ed.ariesver.online","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"ed.ariesver.online"}}}
-  - {"name":"🇯🇵JP_73b6 @WangCai_8_4","type":"vless","server":"fdjp2.xcdh.free.hr","port":2087,"uuid":"73b6dbd5-a27a-4c76-9ad1-42a82380dddb","tls":true,"servername":"ed.ariesver.online","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"ed.ariesver.online"}}}
-  - {"name":"🇯🇵JP_73b6 @WangCai_8_5","type":"vless","server":"fdjp2.xcdh.free.hr","port":2096,"uuid":"73b6dbd5-a27a-4c76-9ad1-42a82380dddb","tls":true,"servername":"ed.ariesver.online","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"ed.ariesver.online"}}}
-  - {"name":"🇯🇵JP_73b6 @WangCai_8_6","type":"vless","server":"fdjp2.xcdh.free.hr","port":8443,"uuid":"73b6dbd5-a27a-4c76-9ad1-42a82380dddb","tls":true,"servername":"ed.ariesver.online","network":"ws","ws-opts":{"path":"Telegram🇨🇳 @WangCai_8 /?ed=2048","headers":{"host":"ed.ariesver.online"}}}
+  - {"name":"免费梯子https://t.me/mftizi","type":"vmess","server":"112.28.208.10","port":45055,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"关注电报https://t.me/mftizi","type":"vmess","server":"158.178.227.16","port":30839,"cipher":"auto","uuid":"19bf4866-54ce-4fc9-8903-db7e160c5b81","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"不定期抽奖https://t.me/mftizi","type":"vmess","server":"b11.ntbq.dynu.net","port":5643,"cipher":"auto","uuid":"847bfa48-992d-4634-904f-be77beb390ce","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"长期更新节点@mftizi","type":"vmess","server":"21.namesilo123.top","port":8880,"cipher":"auto","uuid":"40e71b6a-00cf-437d-8232-4e83e6437286","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"uspp.sanfen002.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -149,31 +127,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -196,31 +153,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -243,31 +179,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
   - name: 📲 电报信息
     type: select
     proxies:
@@ -289,31 +204,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -335,31 +229,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -381,31 +254,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -444,31 +296,10 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
-      - 🇯🇵JP_6081 @WangCai_8_1
-      - 🇯🇵JP_6081 @WangCai_8_2
-      - 🇯🇵JP_6081 @WangCai_8_3
-      - 🇯🇵JP_6081 @WangCai_8_4
-      - 🇯🇵JP_6081 @WangCai_8_5
-      - 🇯🇵JP_6081 @WangCai_8_6
-      - 🇯🇵JP_ffff @WangCai_8_1
-      - 🇯🇵JP_ffff @WangCai_8_2
-      - 🇯🇵JP_ffff @WangCai_8_3
-      - 🇯🇵JP_ffff @WangCai_8_4
-      - 🇯🇵JP_ffff @WangCai_8_5
-      - 🇯🇵JP_ffff @WangCai_8_6
-      - 🇯🇵JP_7fd7 @WangCai_8_1
-      - 🇯🇵JP_7fd7 @WangCai_8_2
-      - 🇯🇵JP_7fd7 @WangCai_8_3
-      - 🇯🇵JP_7fd7 @WangCai_8_4
-      - 🇯🇵JP_7fd7 @WangCai_8_5
-      - 🇯🇵JP_7fd7 @WangCai_8_6
-      - 🇯🇵JP_cd20 @WangCai_8
-      - 🇯🇵JP_73b6 @WangCai_8_1
-      - 🇯🇵JP_73b6 @WangCai_8_2
-      - 🇯🇵JP_73b6 @WangCai_8_3
-      - 🇯🇵JP_73b6 @WangCai_8_4
-      - 🇯🇵JP_73b6 @WangCai_8_5
-      - 🇯🇵JP_73b6 @WangCai_8_6
+      - 免费梯子https://t.me/mftizi
+      - 关注电报https://t.me/mftizi
+      - 不定期抽奖https://t.me/mftizi
+      - 长期更新节点@mftizi
 
 rules:
 # 本地/局域网地址
