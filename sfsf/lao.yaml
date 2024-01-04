@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-04 10:21:30
+# 创建时间：2024-01-04 10:26:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：9
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -92,6 +92,8 @@ proxies:
   - {"name":"日本-113.8KB/s","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"dl.kgvn.garenanow.com"}}}
   - {"name":"荷兰-3.06MB/s","type":"vmess","server":"45.58.153.25","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702961716738"}}
   - {"name":"瑞典-113.6KB/s","type":"trojan","server":"172.234.99.161","port":443,"udp":true,"password":"5f610684-118f-46cf-aa34-9951475b75ad","skip-cert-verify":true}
+  - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -105,6 +107,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -118,6 +122,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -131,6 +137,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
   - name: 📲 电报信息
     type: select
     proxies:
@@ -143,6 +151,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -155,6 +165,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -167,6 +179,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -196,6 +210,8 @@ proxy-groups:
       - 日本-113.8KB/s
       - 荷兰-3.06MB/s
       - 瑞典-113.6KB/s
+      - defaultName_1
+      - defaultName_2
 
 rules:
 # 本地/局域网地址
