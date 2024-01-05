@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-05 14:12:44
+# 创建时间：2024-01-05 14:14:29
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：11
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -95,6 +95,7 @@ proxies:
   - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧+|GB|英国|@wxgqlfx|25","type":"ss","server":"51.142.78.104","port":34817,"password":"8Kjl37BExQuKSDgRhcFMC9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"SSTurkey","type":"ss","server":"195.16.74.80","port":61247,"password":"4KhGkh4cN86xWLjQldFtjq","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -111,6 +112,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -127,6 +129,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -143,6 +146,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
   - name: 📲 电报信息
     type: select
     proxies:
@@ -158,6 +162,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -173,6 +178,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -188,6 +194,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -220,6 +227,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - 🇬🇧+|GB|英国|@wxgqlfx|25
+      - SSTurkey
 
 rules:
 # 本地/局域网地址
