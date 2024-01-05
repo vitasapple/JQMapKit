@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-04 10:26:28
+# 创建时间：2024-01-05 14:12:44
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -94,6 +94,7 @@ proxies:
   - {"name":"瑞典-113.6KB/s","type":"trojan","server":"172.234.99.161","port":443,"udp":true,"password":"5f610684-118f-46cf-aa34-9951475b75ad","skip-cert-verify":true}
   - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧+|GB|英国|@wxgqlfx|25","type":"ss","server":"51.142.78.104","port":34817,"password":"8Kjl37BExQuKSDgRhcFMC9","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -109,6 +110,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -124,6 +126,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -139,6 +142,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
   - name: 📲 电报信息
     type: select
     proxies:
@@ -153,6 +157,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -167,6 +172,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -181,6 +187,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,6 +219,7 @@ proxy-groups:
       - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
+      - 🇬🇧+|GB|英国|@wxgqlfx|25
 
 rules:
 # 本地/局域网地址
