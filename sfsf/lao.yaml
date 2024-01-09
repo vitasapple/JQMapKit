@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-08 08:33:09
+# 创建时间：2024-01-09 08:58:32
 # 使用模版：V2RaySE 默认模版
-# 节点数量：13
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,130 +85,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"中转节点-6.73MB/s","type":"ssr","server":"cm03.newcome.xyz","port":6705,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"5d3ee46961.microsoft.com","protocol-param":"46961:1210-Tha","group":"SSRProvider"}
-  - {"name":"日本-1.34MB/s","type":"ss","server":"54.64.134.112","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"南非-2.37MB/s_1","type":"ss","server":"129.232.129.156","port":444,"password":"DiPietyory","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"南非-2.37MB/s_2","type":"ss","server":"129.232.129.156","port":444,"password":"DiPietyory","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"日本-113.8KB/s","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/takeshi.wiki","headers":{"host":"dl.kgvn.garenanow.com"}}}
-  - {"name":"荷兰-3.06MB/s","type":"vmess","server":"45.58.153.25","port":30000,"cipher":"auto","uuid":"4242f9e0-6b7e-4257-9e93-7ad38015c46a","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1702961716738"}}
-  - {"name":"瑞典-113.6KB/s","type":"trojan","server":"172.234.99.161","port":443,"udp":true,"password":"5f610684-118f-46cf-aa34-9951475b75ad","skip-cert-verify":true}
   - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧+|GB|英国|@wxgqlfx|25","type":"ss","server":"51.142.78.104","port":34817,"password":"8Kjl37BExQuKSDgRhcFMC9","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"SSTurkey","type":"ss","server":"195.16.74.80","port":61247,"password":"4KhGkh4cN86xWLjQldFtjq","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"SSUSA2","type":"ss","server":"5.188.0.246","port":31318,"password":"Bdv7R5WywaYV5Gm2L28MyX","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"SSKazakhstan","type":"ss","server":"195.234.63.72","port":63135,"password":"aPlLX8TUDfV9IMyTURa8Jd","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"Hi!LoadVPN_Free_RuNet","type":"ss","server":"sova.undef.network","port":10930,"password":"dxJfVZaBgEmPEOqVnTaAJTKkq","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -231,19 +161,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转节点-6.73MB/s
-      - 日本-1.34MB/s
-      - 南非-2.37MB/s_1
-      - 南非-2.37MB/s_2
-      - 日本-113.8KB/s
-      - 荷兰-3.06MB/s
-      - 瑞典-113.6KB/s
       - defaultName_1
       - defaultName_2
-      - 🇬🇧+|GB|英国|@wxgqlfx|25
-      - SSTurkey
-      - SSUSA2
-      - SSKazakhstan
+      - Hi!LoadVPN_Free_RuNet
 
 rules:
 # 本地/局域网地址
