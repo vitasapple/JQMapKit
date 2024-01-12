@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-11 12:37:56
+# 创建时间：2024-01-12 09:29:31
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：4
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -88,6 +88,7 @@ proxies:
   - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
   - {"name":"Hi!LoadVPN_Free_RuNet","type":"ss","server":"sova.undef.network","port":10930,"password":"dxJfVZaBgEmPEOqVnTaAJTKkq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"买机场到 白嫖云.net","type":"vmess","server":"cfmmc.nic.1241241241.com","port":2052,"cipher":"auto","uuid":"b349ae13-02d2-44ba-d2e0-ac7970458ce3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/123123","headers":{"host":"sg001.realv2ray.tech"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -97,6 +98,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -106,6 +108,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -115,6 +118,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
   - name: 📲 电报信息
     type: select
     proxies:
@@ -123,6 +127,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -131,6 +136,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -139,6 +145,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,6 +171,7 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - 买机场到 白嫖云.net
 
 rules:
 # 本地/局域网地址
