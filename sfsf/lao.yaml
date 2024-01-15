@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-12 12:46:38
+# 创建时间：2024-01-15 13:45:46
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：7
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -88,6 +88,10 @@ proxies:
   - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
   - {"name":"Hi!LoadVPN_Free_RuNet","type":"ss","server":"sova.undef.network","port":10930,"password":"dxJfVZaBgEmPEOqVnTaAJTKkq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_3","type":"ss","server":"38.180.17.118","port":63274,"password":"66ChcUyVBGMr0thWr1TQQ7","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"TG每日更新@jiediannh1","type":"ss","server":"176.97.76.206","port":49399,"password":"rLQlaSdd9C2PhUGH9JWUbU","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_4","type":"ss","server":"38.180.17.118","port":63274,"password":"66ChcUyVBGMr0thWr1TQQ7","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_5","type":"ss","server":"38.180.1.66","port":7138,"password":"Lbe19QIppUT6Rmpx5hgdf3","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -97,6 +101,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -106,6 +114,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -115,6 +127,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
   - name: 📲 电报信息
     type: select
     proxies:
@@ -123,6 +139,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -131,6 +151,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -139,6 +163,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,6 +192,10 @@ proxy-groups:
       - defaultName_1
       - defaultName_2
       - Hi!LoadVPN_Free_RuNet
+      - defaultName_3
+      - TG每日更新@jiediannh1
+      - defaultName_4
+      - defaultName_5
 
 rules:
 # 本地/局域网地址
