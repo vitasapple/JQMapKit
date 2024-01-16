@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-15 13:45:46
+# 创建时间：2024-01-16 15:24:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,88 +85,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"defaultName_1","type":"ss","server":"195.85.114.149","port":39754,"password":"jTi9HlaPjEeNLCL6dhbHjQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"defaultName_2","type":"ss","server":"193.149.185.228","port":52481,"password":"atE8w5UwA0dpHcZJru4bZr","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"Hi!LoadVPN_Free_RuNet","type":"ss","server":"sova.undef.network","port":10930,"password":"dxJfVZaBgEmPEOqVnTaAJTKkq","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"defaultName_3","type":"ss","server":"38.180.17.118","port":63274,"password":"66ChcUyVBGMr0thWr1TQQ7","cipher":"chacha20-ietf-poly1305"}
   - {"name":"TG每日更新@jiediannh1","type":"ss","server":"176.97.76.206","port":49399,"password":"rLQlaSdd9C2PhUGH9JWUbU","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"defaultName_4","type":"ss","server":"38.180.17.118","port":63274,"password":"66ChcUyVBGMr0thWr1TQQ7","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"defaultName_5","type":"ss","server":"38.180.1.66","port":7138,"password":"Lbe19QIppUT6Rmpx5hgdf3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName","type":"ss","server":"38.180.1.66","port":7138,"password":"Lbe19QIppUT6Rmpx5hgdf3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"319 / OutlineKeys.com","type":"ss","server":"38.180.64.85","port":24632,"password":"QSFPtosA1pIA4LF7hPEFEder2A1emP8x5hZ1xnunD9s=","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -189,13 +161,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName_1
-      - defaultName_2
-      - Hi!LoadVPN_Free_RuNet
-      - defaultName_3
       - TG每日更新@jiediannh1
-      - defaultName_4
-      - defaultName_5
+      - defaultName
+      - 319 / OutlineKeys.com
 
 rules:
 # 本地/局域网地址
