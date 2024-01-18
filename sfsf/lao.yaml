@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-16 15:24:40
+# 创建时间：2024-01-18 12:33:51
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：4
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,8 +86,9 @@ dns:
 
 proxies:
   - {"name":"TG每日更新@jiediannh1","type":"ss","server":"176.97.76.206","port":49399,"password":"rLQlaSdd9C2PhUGH9JWUbU","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"defaultName","type":"ss","server":"38.180.1.66","port":7138,"password":"Lbe19QIppUT6Rmpx5hgdf3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_1","type":"ss","server":"38.180.1.66","port":7138,"password":"Lbe19QIppUT6Rmpx5hgdf3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"319 / OutlineKeys.com","type":"ss","server":"38.180.64.85","port":24632,"password":"QSFPtosA1pIA4LF7hPEFEder2A1emP8x5hZ1xnunD9s=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_2","type":"ss","server":"109.123.232.83","port":45230,"password":"yGeW31wiOQBwrI4flFb6Cm","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -95,8 +96,9 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -104,8 +106,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -113,32 +116,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,8 +169,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - TG每日更新@jiediannh1
-      - defaultName
+      - defaultName_1
       - 319 / OutlineKeys.com
+      - defaultName_2
 
 rules:
 # 本地/局域网地址
