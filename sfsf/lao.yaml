@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-18 12:33:51
+# 创建时间：2024-01-22 09:33:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：9
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -89,6 +89,11 @@ proxies:
   - {"name":"defaultName_1","type":"ss","server":"38.180.1.66","port":7138,"password":"Lbe19QIppUT6Rmpx5hgdf3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"319 / OutlineKeys.com","type":"ss","server":"38.180.64.85","port":24632,"password":"QSFPtosA1pIA4LF7hPEFEder2A1emP8x5hZ1xnunD9s=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_2","type":"ss","server":"109.123.232.83","port":45230,"password":"yGeW31wiOQBwrI4flFb6Cm","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"defaultName_3","type":"ss","server":"51.104.230.134","port":60156,"password":"cWKqgZ2YrNWTOLhDMtJn2R","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"446 / OutlineKeys.com","type":"ss","server":"195.234.63.72","port":63135,"password":"FxP8YbSdHx8upQGsdeHgbt","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰 香港","type":"trojan","server":"ppg-hk.05xuzdqs5j.com","port":10805,"udp":true,"password":"fe9228f9-3150-4eb2-aa74-9e35032dfd8d","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true}
+  - {"name":"defaultName_4","type":"ss","server":"95.181.173.94","port":64723,"password":"1PFNy3ZZeAONY53cfNt0Nq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰 HK1 HKT","type":"ss","server":"s1.getmesl.com","port":10009,"password":"e75a902c-3734-409e-93d3-2819fde1d608","cipher":"aes-128-gcm"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -99,6 +104,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -109,6 +119,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -119,6 +134,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
   - name: 📲 电报信息
     type: select
     proxies:
@@ -128,6 +148,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -137,6 +162,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -146,6 +176,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,6 +207,11 @@ proxy-groups:
       - defaultName_1
       - 319 / OutlineKeys.com
       - defaultName_2
+      - defaultName_3
+      - 446 / OutlineKeys.com
+      - 🇭🇰 香港
+      - defaultName_4
+      - 🇭🇰 HK1 HKT
 
 rules:
 # 本地/局域网地址
