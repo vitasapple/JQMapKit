@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-22 09:35:35
+# 创建时间：2024-01-26 22:35:44
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：9
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -91,6 +91,9 @@ proxies:
   - {"name":"defaultName_3","type":"ss","server":"51.104.230.134","port":60156,"password":"cWKqgZ2YrNWTOLhDMtJn2R","cipher":"chacha20-ietf-poly1305"}
   - {"name":"446 / OutlineKeys.com","type":"ss","server":"195.234.63.72","port":63135,"password":"FxP8YbSdHx8upQGsdeHgbt","cipher":"chacha20-ietf-poly1305"}
   - {"name":"defaultName_4","type":"ss","server":"95.181.173.94","port":64723,"password":"1PFNy3ZZeAONY53cfNt0Nq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"中转_1","type":"vmess","server":"183.232.170.22","port":30025,"cipher":"auto","uuid":"35f96049-8675-42fc-bc25-e0f01cb75295","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"中转_2","type":"vmess","server":"183.232.170.22","port":30131,"cipher":"auto","uuid":"35f96049-8675-42fc-bc25-e0f01cb75295","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"中转_3","type":"vmess","server":"183.232.170.22","port":30058,"cipher":"auto","uuid":"35f96049-8675-42fc-bc25-e0f01cb75295","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -103,6 +106,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -115,6 +121,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -127,6 +136,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -138,6 +150,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -149,6 +164,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -160,6 +178,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,6 +209,9 @@ proxy-groups:
       - defaultName_3
       - 446 / OutlineKeys.com
       - defaultName_4
+      - 中转_1
+      - 中转_2
+      - 中转_3
 
 rules:
 # 本地/局域网地址
